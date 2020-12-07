@@ -7,24 +7,27 @@
 
 ## Description
 
-This is a web application that allows users to gather informational reports about humantirian relief efforts and disasters worldwide. Users will be able to look at published reports by reputable established sources,  from the United Nations Office for the Corrdination of Humanitarian Affairs (OCHA), based on diffferent parameters, such as : disaster types, geolocation by country or events expanding worldwide reach, publishing organization, report language, and keyword search. The APPNAME application takes it a step further, by allowing users to see all reports related to their search results in the context of an interactive Google map. It has desktop, mobile, and tablet responsive capabilities. 
+This is a web application that allows users to gather informational reports about humantirian relief efforts and disasters worldwide. Users will be able to look at published reports by reputable established sources, from the United Nations Office for the Corrdination of Humanitarian Affairs (OCHA), based on diffferent parameters, such as : disaster types, geolocation by country or events expanding worldwide reach, publishing organization, report language, and keyword search. The APPNAME application takes it a step further, by allowing users to see all reports related to their search results in the context of an interactive Google map, and lists of reports. The application has desktop, mobile, and tablet responsive capabilities. 
 
 
 ## User Interfaces
 
-### Homepage Search Tabs and Dropdown menus give user the ability to narrow down by the main parameters.
-- Health Condition patient is experiencing. 
-- Key Words and Phrases related to health condition or treatments.
-- Disease Porgression including cancer stages and reccurent health conditions.
-- Age of Prospective Study Participant
+### Homepage Search Tabs and Dropdown menus give user the ability to narrow down reports by the main parameters.
+- Type of disaster affecting area(s). These can include environmental disasters, health (pandemic) outbreaks. 
+- Key words and names related to a specific event or local region.
+- Country being affected by humanitarian disasters.
+- Organziation that has written and published the report.
+- Language the report has been published in. 
+
 
 ![](./cancer_app_Desktop_page_1_correct.png)
 
 
-### Second page of the application will provide further clinical trial search breakdown.
-- User will be able to narrow down search results by different types of clinical trials by checking off and selecting all the different trial types to include.
-- User will have the choice to further narrow down results based on geolocation of the clinical trials, by selecting a country (from a dropdown menu), US state (from a dropdown menu), or actively inputing into a search bar for cities (needed for locations outside the United States). The user will also be able to input a desired distance away from their given location, to look for clinical trials. 
-- The results yeilded from based search will then be shown on Google Map with markers symbolozing each clinical trial in its location, near the user's given location. A list of the clinical trials shown on the map will be displayed below the map, with buttons that allow the user to click individual trials for further information.
+### Second page of the application will provide search results and interactive Google Map.
+- Near the top of the page, the users search parameters will appear, to remind user of their previously inputed search criteria. 
+- The results yeilded from based search (from first page) will then be shown on interactive Google Map with markers symbolozing the location each report is based out of. 
+- A list of the first ten related reports shown on the map will be displayed below the map, with buttons that allow the user to click individual trials for further information. 
+- A button at the bottom of the page will allow users to load the following ten reports (11-20) from the yielded results. 
 
 ![](./cancer_app_Desktop_page_2.png)
 

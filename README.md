@@ -1,7 +1,7 @@
 # Humanitarian_UN_OCHA_Information_Search_App
 
 # 
-## A NCI Cancer Clinical Trials API Based Application
+## A Humanitarian World Events Reporting API Based Application
 
 ![](./Ctrials_app_banner.png)
 

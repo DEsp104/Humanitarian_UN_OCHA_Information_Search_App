@@ -13,7 +13,7 @@ This is a web application that allows users to gather informational reports abou
 ## User Interfaces
 
 ### Homepage Search Tabs and Dropdown menus give user the ability to narrow down by the main parameters.
--     Health Condition patient is experiencing. 
+- Health Condition patient is experiencing. 
 -     Key Words and Phrases related to health condition or treatments.
 -     Disease Porgression including cancer stages and reccurent health conditions.
 -     Age of Prospective Study Participant

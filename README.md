@@ -2,9 +2,9 @@
 
 ## A Humanitarian World Events Reporting API Based Application
 
-![](./WeMundoBanner.png)
+![](./Images/WeMundoBanner.png)
 
-## Description steph branch test 2
+## Description
 
 This is a web application that allows users to gather informational reports about humantirian relief efforts and disasters worldwide. Users will be able to look at published reports by reputable established sources, from the United Nations Office for the Corrdination of Humanitarian Affairs (OCHA), based on diffferent parameters, such as : disaster types, geolocation by country or events expanding worldwide reach, publishing organization, report language, and keyword search. The APPNAME application takes it a step further, by allowing users to see all reports related to their search results in the context of an interactive Google map, and lists of reports. The application has desktop, mobile, and tablet responsive capabilities.
 
@@ -18,7 +18,7 @@ This is a web application that allows users to gather informational reports abou
 - Organziation that has written and published the report.
 - Language the report has been published in.
 
-![](./cancer_app_Desktop_page_1_correct.png)
+![](./Images/WeMundo_App_Desktop_Pg_1_WireFrame.png)
 
 ### Second page of the application will provide search results and interactive Google Map.
 

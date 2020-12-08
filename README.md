@@ -3,7 +3,7 @@
 # 
 ## A Humanitarian World Events Reporting API Based Application
 
-![](./Ctrials_app_banner.png)
+![](./WeMundoBanner.png)
 
 ## Description
 

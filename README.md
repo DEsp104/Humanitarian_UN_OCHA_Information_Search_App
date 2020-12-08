@@ -46,7 +46,7 @@ This is a web application that allows users to gather informational reports abou
 
 ## API Usage
 
-### NCI Clinical Trials Search API
+### UN OCHA WebRelief API
 
 ![](./NCI_API.png)
 

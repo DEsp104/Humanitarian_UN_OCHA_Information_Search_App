@@ -1,9 +1,13 @@
 # Humanitarian_UN_OCHA_Information_Search_App
 
+<<<<<<< HEAD
 #steph branch test 2
 
 #
 
+=======
+# 
+>>>>>>> 875a02078eb905c39c73eb1edd8f053a52674e1f
 ## A Humanitarian World Events Reporting API Based Application
 
 ![](./WeMundoBanner.png)

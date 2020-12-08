@@ -14,5 +14,8 @@
   },
   "browserslist":[
     "last 1 Chrome version"
-  ]
+  ],
+  "scripts": {
+    "start": "parcel index.html"
+  }
 }

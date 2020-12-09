@@ -24,11 +24,25 @@
     1000+ reports on human relief happening around the world + functional map to locate disasters
   </p>
 
+  <div class = "outer-container">
+    <div class = inner-container>
+      <label for="keyword">Keyword Search</label>
+      <input type="text" name="keyword" value="" placeholder="Search with keywords" id="reportText">
+    </div>
 
-    <input type="text" name="name" value="" id="reportText">
+    <div>
+      <label for = "country">Enter country</label>
+      <select name="country" id="country">
+        <option value="" disabled selected>Select country</option>
+      </select>
+    </div> 
+  </div>
+
+
+  <div class = "outer-container">
     <!-- <a id = "linkToReport"><button id = "getReports">Get Reports</button></a> -->
-    <a href="./report/reports.html"><button id = "getReports">Get Reports</button></a> We are to comment out when we are done with report file
-
+    <a href="./report/reports.html"><button id = "getReports">Search</button></a> <!-- We are to comment out when we are done with report file -->
+  </div>
 
   <script src="./main.js" type="text/javascript" async defer></script>
 </body>

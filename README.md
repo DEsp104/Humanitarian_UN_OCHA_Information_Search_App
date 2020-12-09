@@ -39,7 +39,7 @@ This is a web application that allows users to gather informational reports abou
 
 https://apidoc.rwlabs.org/
 
-- API enpoints used: Reports, Countries, Disasters, and Information Sources (publishers of informatio).
+- API enpoints used: Reports, Countries, Disasters, and Information Sources (publishers of information).
 
 ### Google Maps Javascript API
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a web application that allows users to gather informational reports about humantirian relief efforts and disasters worldwide. Users will be able to look at published reports by reputable established sources, from the United Nations Office for the Corrdination of Humanitarian Affairs (OCHA), based on diffferent parameters, such as : disaster types, geolocation by country or events expanding worldwide reach, publishing organization, report language, and keyword search. The APPNAME application takes it a step further, by allowing users to see all reports related to their search results in the context of an interactive Google map, and lists of reports. The application has desktop, mobile, and tablet responsive capabilities.
+This is a web application that allows users to gather informational reports about humantirian relief efforts and disasters worldwide. Users will be able to look at published reports by reputable established sources, from the United Nations Office for the Corrdination of Humanitarian Affairs (OCHA), based on diffferent parameters, such as : disaster types, geolocation by country or events expanding worldwide reach, publishing organization, report language, and keyword search. The WeMundo application takes it a step further, by allowing users to see all reports related to their search results in the context of an interactive Google map, and lists of reports. The application has desktop, mobile, and tablet responsive capabilities.
 
 ## User Interfaces
 
@@ -18,7 +18,7 @@ This is a web application that allows users to gather informational reports abou
 - Organziation that has written and published the report.
 - Language the report has been published in.
 
-![](./Images/WeMundo_App_Desktop_Pg_1_WireFrame.png)
+![](./Images/WeMundo_Desktop_WireFrame_WebRelief_API_App.png)
 
 ### Second page of the application will provide search results and interactive Google Map.
 
@@ -27,29 +27,19 @@ This is a web application that allows users to gather informational reports abou
 - A list of the first ten related reports shown on the map will be displayed below the map, with buttons that allow the user to click individual trials for further information.
 - A button at the bottom of the page will allow users to load the following ten reports (11-20) from the yielded results.
 
-![](./cancer_app_Desktop_page_2.png)
-
 ### Third page of the application will provide detailed information on the chosen trial user has selected from the yeilded results.
-
-![](./cancer_app_Desktop_page_3.png)
-
-### Mobile Interface
-
-![](./cancer_app_iPhone8_mobile_correct.png)
 
 ### Tablet Interface
 
-![](./cancer_app_tablet_correct.png)
+![](./Images/WeMundo_Tablet_WireFrame_WebRelief_API_App.png)
 
 ## API Usage
 
 ### UN OCHA WebRelief API
 
-![](./NCI_API.png)
+https://apidoc.rwlabs.org/
 
-- API enpoints used: Clinical Trials, Disease, Terms, and Interventions.
-
-- https://clinicaltrialsapi.cancer.gov/
+- API enpoints used: Reports, Countries, Disasters, and Information Sources (publishers of informatio).
 
 ### Google Maps Javascript API
 
@@ -57,18 +47,18 @@ This is a web application that allows users to gather informational reports abou
 
 ## Requirements:
 
-- The Ctrials web application will be developed using HTML, CSS, and Javascript.
-- The data will be retrieved from an external source (the National Cancer Institute's Clinical Trials API and Google Maps API) by using Axios, and rendered into the DOM.
+- The WeMundo web application will be developed using HTML, CSS, and Javascript.
+- The data will be retrieved from an external source (UN OCHA ReliefWeb API and Google Maps API) by using Axios, and rendered into the DOM.
 - Flexbox will be used to efficently lay out, align, and distribute elements on the application pages.
 - An API Key will be utilized to access the Google Maps API, with its corresponding ENV file.
-- The National Cancer Institutue's API does not require an API Key.
-- Ctrials will be an application designed and built to be responsive on three different screen sizes: desktop, mobile, and tablet. Application will be hosted on Netlify.
+- The UN OCHA ReliefWeb API does not require an API Key.
+- WeMundo will be an application designed and built to be responsive on three different screen sizes: desktop, mobile, and tablet. Application will be hosted on Netlify.
 
 ## Inspiration
 
-As developers, who were previously in the biology and science fields, we wanted to create an application that could be useful for people who need breakthrough clinical health services and scientific researchers conducting clinical trials. The Ctrials application provides is an easy to use tool for individuals looking for readily accessible cancer clinical research trials information, along with location proximity, to better connect possible participants to clinical trials.
+As developers, who were previously in the biology and science fields, we wanted to create an application that could be useful for people who are looking for information reharding humanitarian issues around the world. The WeMundo application is an easy to use tool for individuals looking for readily accessible and reliable maps and information.
 
-Thank you to the National Cancer Institute for the development of their clinical trials API. We sought out inspiration from their current search website: https://www.cancer.gov/about-cancer/treatment/clinical-trials/search/advanced .
+Thank you to UN OCHA ReliefWeb for the development of reports and maps data API. We sought out inspiration from their current search website: https://reliefweb.int/.
 
 ### Developed by: Stephanie Pena and David Espinal
 

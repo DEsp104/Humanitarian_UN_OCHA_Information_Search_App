@@ -27,7 +27,7 @@ This is a web application that allows users to gather informational reports abou
 - A list of the first ten related reports shown on the map will be displayed below the map, with buttons that allow the user to click individual trials for further information.
 - A button at the bottom of the page will allow users to load the following ten reports (11-20) from the yielded results.
 
-### Third page of the application will provide detailed information on the chosen trial user has selected from the yeilded results.
+### Third page of the application will provide detailed information on the chosen report that was selected from the yeilded results.
 
 ### Tablet Interface
 

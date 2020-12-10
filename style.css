@@ -1,3 +1,11 @@
+html {
+	box-sizing: border-box; /* This will allow us to keep the border and padding contain in the content of the element. With out box-sizing the elements with different width will come out of the parent element stretching the page and making uncontainable. */
+}
+
+*, *::before, *::after {
+	box-sizing: inherit; /* This will take any of the elements, including psedo-elements, and apply the border-box value to the box-sizing. Remember this is being inherited from the <html> element. *(means the universal CSS selector) */
+}
+
 * {
   border: 1px solid red !important;
 }
@@ -6,3 +14,59 @@ body {
   margin: 0;
   background-color: #DBE7F4;
 }
+
+header{
+  display: flex;
+  background-color: white;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  background-color: black;
+  color: white;
+  padding: 40px 10px;
+  width: 32%;
+  text-align: center;
+}
+
+nav {
+  margin: 0 auto;
+  width: 68%;
+  
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  margin: 0;
+}
+
+nav li {
+  margin-right: 5%;
+  
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 4px 20px;
+}
+
+nav a:hover {
+  background-color: #C0130E;
+  color: white;
+  padding: 4px 20px;
+}
+
+/* when on index.html only, keep Home highlighted */
+#mark {
+  background-color: #C0130E;
+  color: white;
+  padding: 4px 20px;
+}
+

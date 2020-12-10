@@ -70,3 +70,21 @@ nav a:hover {
   padding: 4px 20px;
 }
 
+.imgsize {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+#imgsize1 {
+  background-image: url(image/united.jpeg);
+}
+
+#imgsize2 {
+  background-image: url(image/children.jpg);
+}
+
+#imgsize3 {
+  background-image: url(image/medicalsupplies.jpg);
+}

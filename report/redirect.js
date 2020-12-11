@@ -11,6 +11,8 @@ let response = async function () {
 
     const reportData = res.data.data
     for (let i = 0; i < reportData.length; i++) { 
+      // document.getElementById('title_section').innerHTML += `<li id = ${reportData[i].id}><a href = './reportsinfo.html'>${reportData[i].fields.title}</a></li>`
+    
       let newLi = document.createElement('li');
       let newA = document.createElement('a');
       newA.setAttribute('href', './reportsinfo.html')
@@ -18,7 +20,7 @@ let response = async function () {
       newA.textContent = `${reportData[i].fields.title}`
     
       newLi.appendChild(newA);
-      document.getElementById('title_section').appendChild(newLi); 
+      document.getElementById('title_section').appendChild(newLi);    
     }
   }).catch(err => { 
     console.log(err)
@@ -35,6 +37,7 @@ document.getElementById('title_section').addEventListener('click', (e) => {
 
   localStorage.setItem('report-id', reportId);
 })
+
 
 
 //Click next or previous and you will get fresh 10 new reports
@@ -72,6 +75,7 @@ document.getElementById('prevTitle').addEventListener('click', async (e) => {
     }
     if (num === 0) { 
       newA2.textContent = "";
+      newA2.removeAttribute("id", 'prevTitle2')
     }
   
   } catch (e) { 
@@ -94,8 +98,8 @@ pageInfo.setAttribute("id", 'pageInfo');
 document.getElementById('info').appendChild(pageInfo);
 
 document.getElementById('nextTitle').addEventListener('click', async (e) => {
-
-  
+  //add second id name to prev button
+  newA2.setAttribute("id", 'prevTitle2');
     
   try {
     newA2.textContent = "prev";

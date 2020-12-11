@@ -350,6 +350,16 @@ select {
   padding: 2px 0;
 }
 
+#report_information h1 {
+  background-color: none;
+  font-size: inherit;
+  margin: 0;
+  color: black;
+  padding: 0;
+  text-align: inherit;
+  width: inherit;
+}
+
 #report_information p {
   padding: 0 12px;
 }

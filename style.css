@@ -342,13 +342,13 @@ select {
 
 /* Following style is for reportinfo.html */
 
-#report_information{
+/* #report_information{
   margin-top: 4%;
   margin-left: 8%;
   margin-right: 8%;
   background-color: white;
   padding: 2px 0;
-}
+} */
 
 #report_information h1 {
   background-color: none;

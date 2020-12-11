@@ -1,0 +1,114 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header h1 {
+    padding: 21px 12px;   
+    font-size: 5vw;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    position: relative;
+    top: 14px;
+    height: 33px;
+    margin-right: 2.25rem;
+    font-size: 7.2vw;
+    color: black;
+    border: red 2px solid;
+    border-radius: 2px;
+    padding: 2px 4px;
+  }
+
+  #right-content {
+    width: 100%;
+  }
+
+  #flex {
+    flex-direction: column-reverse;
+    margin-top: 18px;
+  }
+
+  #imgsize2, #imgsize3 {
+    display: none;
+  }
+  
+  #imgsize1 {
+    width: 160px;
+    height: 160px;
+    margin: 0;
+  }
+
+  #left-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  #left-content h2 {
+    margin: 0px;
+    font-size: 5vw;
+  }
+
+  #left-content p {
+    font-size: 3.4vw;
+  }
+
+  .inner-container {
+    width: 50%;
+  }
+
+  .inner-container .selectionStyle {
+    width: 100%;
+  }
+  
+  #reportText {
+    height: 26px;
+  }
+
+  .selectionStyle {
+    height: 26px;
+  }
+
+  .selectionStyle::before {
+    height: 26px;
+  }
+
+  .selectionStyle::after {
+    height: 26px;
+  }
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { 
+
+}
+
+/* Large devices (laptops/desktops, 882px and up) */
+@media only screen and (min-width: 882px) {
+  .hamburger {
+		display: none;
+	}
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1300px and up) */
+@media only screen and (min-width: 1400px) {
+
+}

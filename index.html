@@ -21,7 +21,16 @@
         <li><a href="#" title="FAQs">FAQs</a></li>
       </ul>
     </nav>
-    <div class="hamburger"><i class="fas fa-bars"></i></div><!-- We need to put a hamburger  -->
+    <div class="hamburger">
+      <i id = ham-icon class="hambtn fas fa-bars"></i>
+      <ul id = "myDropdown" class="ham-dropdowncontent">
+        <li id = "mark1"><a href="#" title="Home" id="">Home</a></li>
+        <li><a href="#" title="About">About</a></li>
+        <li><a href="#" title="Disasters">Disasters</a></li>
+        <li><a href="#" title="Countries">Countries</a></li>
+        <li><a href="#" title="FAQs">FAQs</a></li>
+      </ul>
+    </div><!-- We need to put a hamburger  -->
   </header>
 
   <div id = "flex">
@@ -54,7 +63,7 @@
 
       <div class = "outer-container">
         <div class = inner-container>
-          <label for = "organization">Source Organization</label>
+          <label for = "organization" id = "organization"><span>Source Organization</span></label>
           <div class = "selectionStyle">
             <select name="organization" class="selection-box">
               <option value="" selected>Organization type</option> 

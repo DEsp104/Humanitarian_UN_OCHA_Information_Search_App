@@ -317,27 +317,32 @@ select {
 }
 
 #prevTitle2, #nextTitle {
+  display: inline-block;
   position: relative;
   top: 80px;
   left: 42%;
   transform: translate(-50%, -50%); 
-  text-align: center; 
-  margin-bottom: 10px;
-  background-color: #28BFE6;
-  padding: 1% 2%;
-  border-radius: 50%;
-  text-decoration: none;
-  color: black;
-  font-weight: bolder;
-  font-size: 1vw;
+
 } 
 
 #nextTitle {
   margin-left: 2.5%;
+  margin-right: 2.5%;
+  /* left: 108%; */
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #28BFE6;
 }
 
 #prevTitle2 {
-  margin-right: 2.5%;
+  left: -8%;
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-right:30px solid #28BFE6; 
 }
 
 /* Following style is for reportinfo.html */

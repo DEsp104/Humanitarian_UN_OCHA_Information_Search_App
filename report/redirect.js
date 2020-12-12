@@ -89,7 +89,7 @@ document.getElementById('prevTitle').addEventListener('click', async (e) => {
 let newA1 = document.createElement('a');
 newA1.setAttribute("href", '#')
 newA1.setAttribute("id", 'nextTitle')
-newA1.textContent = "next";
+newA1.textContent = "";
 document.getElementById('info').appendChild(newA1);
 
 //****For page info
@@ -102,7 +102,7 @@ document.getElementById('nextTitle').addEventListener('click', async (e) => {
   newA2.setAttribute("id", 'prevTitle2');
     
   try {
-    newA2.textContent = "prev";
+    newA2.textContent = "";
     num += 10;
     
     console.log(num);

@@ -2,15 +2,36 @@ import Axios from 'axios';
 
 let getReport = document.getElementById("getReports");
 // console.log(getReport)
+//following variables are from inputs and select elements
 const searchReportInput = document.getElementById("reportText");
-
-
+const countrySelect = document.getElementById("country");
+const organizationSelect = document.getElementById("organizationSelect");
+const disasterSelect = document.getElementById("disasterSelect");
+const languageSelect = document.getElementById("languageSelect");
 
 getReport.addEventListener('click', () => {
 
+  //value from keyword input save to local storage
   let searchReport = searchReportInput.value;
   localStorage.setItem('value-name', searchReport);
 
+  //value from country input save to local storage
+  let countryValue = countrySelect.value;
+  localStorage.setItem('country-value', countryValue);
+
+  //value from disaster input save to local storage
+  let disasterValue = disasterSelect.value;
+  localStorage.setItem('disaster-value', disasterValue);
+
+  //value from Organization input save to local storage
+  let orgValue = organizationSelect.value;
+  localStorage.setItem('org-value', orgValue);
+
+  //value from Organization input save to local storage
+  let langValue = languageSelect.value;
+  localStorage.setItem('lang-value', langValue);
+
+  
   if (searchReport.length > 1) {
     document.getElementById("linkToReport").setAttribute('href', "./report/reports.html");
     document.getElementById("linkToReport").setAttribute('target', "_blank")

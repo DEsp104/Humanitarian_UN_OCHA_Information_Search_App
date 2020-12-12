@@ -11,14 +11,63 @@
 
   .hamburger {
     position: relative;
-    top: 14px;
-    height: 33px;
+    top: 22px;
+    height: 1%;
     margin-right: 2.25rem;
-    font-size: 7.2vw;
+    font-size: 4.2vw;
     color: black;
     border: red 2px solid;
     border-radius: 2px;
     padding: 2px 4px;
+  }
+
+  /* for hamburger to pop up when clicked */
+  .ham-dropdowncontent {
+    font-size: 3vw;
+    position: absolute;
+    width: 360%;
+    top: 110%;
+    right: -20px;
+    list-style-type: none;
+    box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.2);
+    margin: 0;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  #myDropdown a {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 4px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+
+  #myDropdown a:hover {
+   color: white;
+   background-color: red;
+  }
+
+
+
+  #myDropdown li:not(:last-child) {
+    border-bottom: 2px #E5E5E5 solid;
+  }
+
+  #mark1 {
+    background-color: red;
+  }
+
+  #mark1 a {
+    color: white;
   }
 
   #right-content {
@@ -27,7 +76,7 @@
 
   #flex {
     flex-direction: column-reverse;
-    margin-top: 18px;
+    margin: 18px 5px;
   }
 
   #imgsize2, #imgsize3 {
@@ -55,60 +104,527 @@
   }
 
   .inner-container {
-    width: 50%;
+    width: 36%;
   }
 
   .inner-container .selectionStyle {
     width: 100%;
   }
   
-  #reportText {
+  #reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
+    height: 26px;
+    font-size: 2.2vw;
+  }
+
+  #organization span {
+    display: none;
+  }
+
+  #organization:after {
+    content: 'Organization';
+  }
+
+  .selectionStyle .selection-box {
+    font-size: 2.2vw;
     height: 26px;
   }
 
-  .selectionStyle {
-    height: 26px;
+  #getReports {
+    font-size: 3vw;
   }
 
-  .selectionStyle::before {
-    height: 26px;
+  /* styling for report page */
+
+  .header2_for_other {
+    font-size: 4.8vw
   }
 
-  .selectionStyle::after {
-    height: 26px;
+  #title_section {
+    font-size: 4.2vw;
+}
+
+  #prevTitle2, #nextTitle {
+    font-size: 1rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 6px 0;
   }
+
+  #prevTitle2 {
+    left: -8%;
+  }
+
+  #nextTitle {
+    left: 108%;
+  }
+
+  #info{
+    margin: 0 13%;
+  }
+
+    /* styling reportsinfo */
+
+    #report_information {
+      margin-top: 14%;
+    }
+  
+    #back_link {
+      left: 71%;
+    }
+  
+    /* for hamburger to pop up when clicked */
+    .ham-dropdowncontent {
+      font-size: 3vw;
+      position: absolute;
+      width: 360%;
+      top: 110%;
+      right: -20px;
+      list-style-type: none;
+      box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.2);
+      margin: 0;
+      background-color: white;
+      margin: 0px;
+      padding: 0px;
+      z-index: 1;
+      display: none;
+    }
+  
+    .show {
+      display: block;
+    }
+  
 
 }
+
+
+
+
+
 
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  body  {
+    background: linear-gradient(180deg, #DBE7F4, #FFFFFF 50%) no-repeat;
+  }
+
+  header {
+    background-color: transparent;
+  }
+
+  header h1 {
+    padding: 20px 10px;   
+    font-size: 4.5vw;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    position: relative;
+    top: 22px;
+    height: 1%;
+    margin-right: 2.25rem;
+    font-size: 3.8vw;
+    color: black;
+    border: red 2px solid;
+    border-radius: 2px;
+    padding: 2px 4px;
+  }
+
+  /* for hamburger to pop up when clicked */
+  .ham-dropdowncontent {
+    font-size: 2.8vw;
+    position: absolute;
+    width: 468%;
+    top: 110%;
+    right: -20px;
+    list-style-type: none;
+    box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.2);
+    margin: 0;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  #myDropdown a {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 4px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+
+  #myDropdown a:hover {
+   color: white;
+   background-color: red;
+  }
+
+
+
+  #myDropdown li:not(:last-child) {
+    border-bottom: 2px #E5E5E5 solid;
+  }
+
+  #mark1 {
+    background-color: red;
+  }
+
+  #mark1 a {
+    color: white;
+  }
+
+  #right-content {
+    width: 100%;
+  }
+
+  #flex {
+    flex-direction: column-reverse;
+    margin: 18px 5px;
+  }
+
+  #imgsize2, #imgsize3 {
+    display: none;
+  }
+  
+  #imgsize1 {
+    width: 160px;
+    height: 160px;
+    margin: 0;
+  }
+
+  #left-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  #left-content h2 {
+    margin: 0px;
+    font-size: 4vw;
+  }
+
+  #left-content p {
+    font-size: 2.6vw;
+  }
+
+  .inner-container {
+    width: 26%;
+  }
+
+  .inner-container .selectionStyle {
+    width: 100%;
+  }
+  
+  #reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
+    height: 26px;
+    font-size: 1.66vw;
+  }
+
+  #organization span {
+    display: none;
+  }
+
+  #organization:after {
+    content: 'Organization';
+  }
+
+  .selectionStyle .selection-box {
+    font-size: 1.66vw;
+    height: 26px;
+  }
+
+  #getReports {
+    font-size: 1.66vw;
+  }
+
+
+    /* styling for report page */
+
+    .header2_for_other {
+      font-size: 2.6vw
+    }
+  
+    #title_section {
+      font-size: 2.2vw;
+  }
+  
+    #prevTitle2, #nextTitle {
+      top: 16%;
+      margin-bottom: 10%;
+      text-align: center;
+      left: 40%;
+      padding: 1% 2%;
+      font-size: 2vw;
+    }
+  
+    #info{
+      margin: 0 8%;
+    }
+  
+      /* styling reportsinfo */
+  
+      #report_information {
+        margin-top: 4%;
+      }
+    
+      #back_link {
+        left: 71%;
+      }
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) { 
+  header h1 {
+    padding: 18px 8px;
+    font-size: 3.4vw;
+  }
+
+  .selectionStyle .selection-box {
+      font-size: 1.4vw;
+  }
+
+  #getReports {
+    font-size: 1.4vw;
+}
+
+.hamburger {
+  font-size: 3.4vw;
+}
+
+.ham-dropdowncontent {
+  font-size: 2.4vw;
+}
+
+#flex {
+  margin: 0px 2%;
+}
+
+#left-content h2 {
+  margin: 0px;
+  font-size: 3.6vw;
+}
+
+#left-content p {
+  font-size: 2.4vw;
+}
+
+#right-content {
+  width: 62%;
+  margin: 0 auto;
+}
+
+#imgsize2, #imgsize3 {
+  display: block;
+}
+
+#imgsize1, #imgsize2, #imgsize3  {
+  width: 160px;
+  height: 160px;
+  margin: 0;
+}
+
+
+#reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
+  font-size: 1.6vw;
+  height: 29px;
+}
+
+.selectionStyle .selection-box {
+  font-size: 1.6vw;
+  height: 29px;
+}
+
+#getReports {
+  font-size: 1.3vw;
+}
 
 }
 
 /* Large devices (laptops/desktops, 882px and up) */
 @media only screen and (min-width: 882px) {
+  body {
+    background: 0;
+    background-color: #DBE7F4;
+  }
+
+  header {
+    background-color: white;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
   .hamburger {
 		display: none;
-	}
+  }
 
+  #flex {
+    flex-direction: row;
+    margin-top: 66px;
+  }
+  
+  #left-content h2 {
+    margin: 0px;
+    font-size: 2.7vw;
+    margin-top: 15%;
+  }
+  
+  #left-content p {
+    font-size: 2vw;
+  }
+  
+  #imgsize1, #imgsize2, #imgsize3  {
+    width: 200px;
+    height: 200px;
+    
+  }
+  
+  #reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
+    font-size: 1.3vw;
+    height: 30px;
+  }
+  
+  .selectionStyle .selection-box {
+    font-size: 1.3vw;
+    height: 30px;
+  }
+  
+  #getReports {
+    font-size: 1.13vw;
+  }
+
+      /* styling for report page */
+
+      .header2_for_other {
+        font-size: 2vw
+      }
+    
+      #title_section {
+        font-size:  1.5vw;
+    }
+    
+      #prevTitle2, #nextTitle {
+        top: 32px;
+        margin-bottom: 10%;
+        text-align: center;
+        left: 40%;
+        padding: 1% 2%;
+        font-size: 1.3vw;
+      }
+    
+      #info{
+        margin: 0 8%;
+        margin-bottom: 8%;
+      }
+    
+        /* styling reportsinfo */
+    
+        #report_information {
+          margin-top: 4%;
+          margin-bottom: 2%;
+        }
+      
+        #back_link {
+          left: 71%;
+        }
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {  
+  #left-content h2 {
+    margin: 0px;
+    font-size: 2.4vw;
+    margin-top: 15%;
+  }
+  
+  #left-content p {
+    font-size: 1.58vw;
+  }
+  
+  
+  #reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
+    height: 32px;
+  }
+  
+  .selectionStyle .selection-box {
+    height: 32px;
+  }
+  
+  #getReports {
+    font-size: 0.86vw;
+  }
 
 
+      /* styling for report page */
+
+      .header2_for_other {
+        font-size: 1.8vw
+      }
+    
+      #title_section {
+        font-size:  1.3vw;
+    }
+    
+      #prevTitle2, #nextTitle {
+        top: 52px;
+        font-size: 1vw;
+      }
+    
+      #info{
+        margin: 0 8%;
+        margin-bottom: 8%;
+      }
+    
+        /* styling reportsinfo */
+    
+        #report_information {
+          margin-top: 2%;
+          margin-bottom: 2%;
+        }
+      
+        #back_link {
+          left: 71%;
+        }
 }
 
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1400px) {
-
+  #left-content h2 {
+    margin: 0px;
+    font-size: 2vw;
+    margin-top: 15%;
+  }
+  
+  #left-content p {
+    font-size: 1.2vw;
+  }
+  
+  
+  #reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
+    font-size: 1vw;
+  }
+  
+  .selectionStyle .selection-box {
+    font-size: 1vw;
+  }
+  
+  #getReports {
+    font-size: 0.79vw;
+  }
 }

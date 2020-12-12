@@ -92,10 +92,10 @@ newA1.setAttribute("id", 'nextTitle')
 newA1.textContent = "next";
 document.getElementById('info').appendChild(newA1);
 
-//For page info
-let pageInfo = document.createElement('p');
-pageInfo.setAttribute("id", 'pageInfo');
-document.getElementById('info').appendChild(pageInfo);
+//****For page info
+// let pageInfo = document.createElement('p');
+// pageInfo.setAttribute("id", 'pageInfo');
+// document.getElementById('info').appendChild(pageInfo);
 
 document.getElementById('nextTitle').addEventListener('click', async (e) => {
   //add second id name to prev button
@@ -126,4 +126,11 @@ document.getElementById('nextTitle').addEventListener('click', async (e) => {
   } catch (e) { 
     console.log(e)
   }
+})
+
+
+//Below is the code to open the nav up when hamburger icon is clicked
+
+document.querySelector('.hamburger').addEventListener('click', () => {
+	document.getElementById("myDropdown").classList.toggle("show");
 })

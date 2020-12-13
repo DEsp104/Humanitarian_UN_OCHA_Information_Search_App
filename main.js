@@ -9,6 +9,8 @@ const organizationSelect = document.getElementById("organizationSelect");
 const disasterSelect = document.getElementById("disasterSelect");
 const languageSelect = document.getElementById("languageSelect");
 
+
+
 getReport.addEventListener('click', () => {
 
   //value from keyword input save to local storage
@@ -42,6 +44,8 @@ getReport.addEventListener('click', () => {
   }
 
   searchReportInput.value = "";
+  //to delete the previous value saved in the local storage
+  localstorage.clear();
 })
 
 
@@ -93,5 +97,8 @@ window.onclick = function(e) {
   }
 
 }
+
+=======
+
 
 

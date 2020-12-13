@@ -171,30 +171,49 @@
 
   #title_section {
     font-size: 4.2vw;
+
+}
+
+  #prevTitle2, #nextTitle {
+    font-size: 1rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 6px 0;
+=======
   }
 
   #prevTitle2, #nextTitle {
     margin: 0;
     position: absolute;
     top: 50%;
+
   }
 
   #prevTitle2 {
     left: -8%;
+
+=======
     width: 0; 
     height: 0; 
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent; 
     border-right:30px solid #28BFE6; 
+
   }
 
   #nextTitle {
     left: 108%;
+
+=======
     width: 0;
     height: 0;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     border-left: 30px solid #28BFE6;
+
   }
 
   #info{
@@ -231,7 +250,12 @@
     .show {
       display: block;
     }
-  }
+
+  
+
+}
+
+
 
 
 
@@ -432,6 +456,17 @@
   
     #title_section {
       font-size: 2.2vw;
+
+  }
+  
+    #prevTitle2, #nextTitle {
+      top: 16%;
+      margin-bottom: 10%;
+      text-align: center;
+      left: 40%;
+      padding: 1% 2%;
+      font-size: 2vw;
+=======
     }
   
     #prevTitle2, #nextTitle {
@@ -448,6 +483,7 @@
   
     #nextTitle {
       left: 103%;
+
     }
   
     #info{
@@ -532,6 +568,7 @@
   font-size: 1.3vw;
 }
 
+
 /* Styling for report page */
 #prevTitle2, #nextTitle {
   position: relative;
@@ -539,6 +576,7 @@
   left: 50%;
   font-size: 1vw;
 }
+
 
 }
 
@@ -614,7 +652,17 @@
       #title_section {
         font-size:  1.5vw;
     }
-    
+
+      #prevTitle2, #nextTitle {
+        top: 32px;
+        margin-bottom: 10%;
+        text-align: center;
+        left: 40%;
+        padding: 1% 2%;
+        font-size: 1.3vw;
+      }
+
+
 
     
       #info{
@@ -679,6 +727,13 @@
         font-size:  1.3vw;
     }
     
+
+      #prevTitle2, #nextTitle {
+        top: 52px;
+        font-size: 1vw;
+      }
+
+
     
       #info{
         margin: 0 8%;

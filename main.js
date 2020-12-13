@@ -1,27 +1,26 @@
 import Axios from 'axios';
 
-const navSlide = () => {
-    //navigation menu slides into screen from the side
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
+const navSlide= () => {
+  //navigation menu slides into screen from the side
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
   
+  //Toggle Navigation
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+  });
     
-    burger.addEventListener('click', () => {
-        //Toggle Navigation
-        nav.classList.toggle('nav-active');
-    
-        //Animate Links on Sliding Nav
-        navLinks.forEach((link, index) => {
-          if (link.style.animation) {
-            link.style.animation = '';
-          } else {
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s`;
-          }
-        });
-    });
+  //Animate Links on Sliding Nav
+  // navLinks.forEach((link,index) =>{
+  //     if(link.style.animation) {
+  //       link.style.animation = '';
+  //     } else {
+  //         link.style.animation=`navLinkFade 0.5s ease forwards ${index /7 + 1.5}s`;
+  //         }
+  //         console.log(index / 7);
+  //       });
 }
-
 navSlide();
 
 
@@ -124,7 +123,6 @@ window.onclick = function(e) {
 
 }
 
-=======
 
 
 

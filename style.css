@@ -9,26 +9,39 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8hv;
-  background-color: #2f3c4d;
+  background-color: #254f86;
   font-family: "Poppins", sans-serif;
 }
 
 .logo {
-  color: #eff0f1;
+  
+  color: #f09f54;
+  font-size: 4vw;
   letter-spacing: 0px;
   font-size: 34px;
+}
+
+h1::first-letter {
+  color: #f09f54;
+  font-size: 4vw;
+}
+
+nav a:hover {
+  background-color: #27C3CD;
+  color: white;
+  padding: 4px 20px;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 30%;
 }
-
 
 .nav-links li {
   list-style: none;
 }
+
 .nav-links a {
   color: #eff0f1;
   text-decoration: none;
@@ -40,27 +53,6 @@ nav {
 .burger {
   display: none;
   cursor: pointer;
-=======
-h1 {
-  margin: 0;
-  /* font-size: 2.5em; */
-  font-size: 3vw;
-  background-color: #254f86;
-  color: #9aadd0;
-  padding: 40px 10px;
-  width: 32%;
-  text-align: center;
-}
-
-h1::first-letter {
-  color: #f09f54;
-  font-size: 4vw;
-}
-
-nav {
-  margin: 0 auto;
-  width: 68%;
-
 }
 
 .burger div {
@@ -70,16 +62,17 @@ nav {
   margin: 5px;
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  body{
+    overflow: hidden;
+  }
+}
   .nav-links {
     width: 60%;
   }
-}
+
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
   .nav-links {
     position: absolute;
     right: 0px;
@@ -117,20 +110,17 @@ nav {
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg translate(-5px, 6px));
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 .toggle .line2 {
   opacity: 0;
 }
 .toggle .line3 {
-  transform: rotate(45deg translate(-5px, -6px));
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
-nav a:hover {
-  background-color: #27C3CD;
-  color: white;
-  padding: 4px 20px;
-}
+
+
 
 /* when on index.html only, keep Home highlighted */
 #mark {
@@ -258,13 +248,6 @@ select {
   appearance: none;
   cursor: pointer;
   padding: 5px 15px;
-}
-
-/* Search button */
-
-#searchButton {
-  display: flex;
-  flex-direction: column-reverse;
 }
 
 #getReports {

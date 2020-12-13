@@ -50,7 +50,7 @@
   #myDropdown a {
     width: 100%;
     display: inline-block;
-    padding: 10px 4px;
+    padding: 10px 0px;
     text-decoration: none;
     color: black;
     text-align: center;
@@ -274,6 +274,8 @@
     border: red 2px solid;
     border-radius: 2px;
     padding: 2px 4px;
+    background-color: white;
+    cursor: pointer;
   }
 
   /* for hamburger to pop up when clicked */
@@ -300,7 +302,7 @@
   #myDropdown a {
     width: 100%;
     display: inline-block;
-    padding: 10px 4px;
+    padding: 10px 0px;
     text-decoration: none;
     color: black;
     text-align: center;
@@ -536,7 +538,7 @@
 #prevTitle2, #nextTitle {
   position: relative;
   top: 108px;
-  left: 50%;
+  left: 48%;
   font-size: 1vw;
 }
 

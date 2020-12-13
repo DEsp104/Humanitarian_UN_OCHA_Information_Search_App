@@ -1,7 +1,38 @@
+html {
+  box-sizing: border-box; /* This will allow us to keep the border and padding contain in the content of the element. With out box-sizing the elements with different width will come out of the parent element stretching the page and making uncontainable. */
+}
+x *,
+*::before,
+*::after {
+  box-sizing: inherit; /* This will take any of the elements, including psedo-elements, and apply the border-box value to the box-sizing. Remember this is being inherited from the <html> element. *(means the universal CSS selector) */
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  border: 1px solid red !important;
+}
+
+body {
+  margin: 0;
+  background-color: #dbe7f4;
+}
+
+header {
+  display: flex;
+  background-color: white;
+}
+
+h1 {
+  margin: 0;
+  /* font-size: 2.5em; */
+  font-size: 3vw;
+  background-color: black;
+  color: white;
+  padding: 40px 10px;
+  width: 32%;
+  text-align: center;
 }
 
 nav {
@@ -15,126 +46,38 @@ nav {
 
 .logo {
   color: #eff0f1;
-  letter-spacing: 0px;
-  font-size: 34px;
 }
 
-.nav-links {
+nav ul {
   display: flex;
-  justify-content: space-around;
-  width: 50%;
-}
-
-
-.nav-links li {
+  justify-content: center;
+  align-items: center;
   list-style: none;
-}
-.nav-links a {
-  color: #eff0f1;
-  text-decoration: none;
-  letter-spacing: 0px;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.burger {
-  display: none;
-  cursor: pointer;
-=======
-h1 {
+  height: 100%;
   margin: 0;
-  /* font-size: 2.5em; */
-  font-size: 3vw;
-  background-color: #254f86;
-  color: #9aadd0;
-  padding: 40px 10px;
-  width: 32%;
-  text-align: center;
 }
 
-h1::first-letter {
-  color: #f09f54;
-  font-size: 4vw;
+nav li {
+  margin-right: 5%;
 }
 
-nav {
-  margin: 0 auto;
-  width: 68%;
-
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #eff0f1;
-  margin: 5px;
-}
-
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: #2f3c4d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-  }
-}
-
-.nav_active {
-  transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg translate(-5px, 6px));
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg translate(-5px, -6px));
+nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 4px 20px;
+  font-size: 1.2vw;
 }
 
 nav a:hover {
-  background-color: #27C3CD;
+  background-color: #c0130e;
   color: white;
   padding: 4px 20px;
 }
 
 /* when on index.html only, keep Home highlighted */
 #mark {
-  background-color: #27C3CD;
+  background-color: #c0130e;
   color: white;
   padding: 4px 20px;
 }
@@ -146,7 +89,6 @@ nav a:hover {
   width: 60%;
   margin-right: 25px;
   margin-left: 25px;
-  
 }
 
 #left-content h2 {

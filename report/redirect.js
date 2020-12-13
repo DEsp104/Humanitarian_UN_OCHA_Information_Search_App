@@ -8,6 +8,28 @@ let countryValue = localStorage.getItem('country-value');
 let disasterValue = localStorage.getItem('disaster-value');
 let orgValue = localStorage.getItem('org-value');
 
+//get text from keyword, disaster, lang, org, and country
+let langText = localStorage.getItem('lang-text');
+let disasterText = localStorage.getItem('disaster-text');
+let orgText = localStorage.getItem('org-text');
+
+//Below is the code to populate the parameter
+
+if (searchReport !== "") { 
+  document.getElementById("keypara").textContent = `Keywords(s): ${searchReport}`;
+}
+if (countryValue !== "") { 
+  document.getElementById("countrypara").textContent = `Country: ${countryValue}`;
+}
+if (langValue !== "") { 
+  document.getElementById("langpara").textContent = `Language: ${langText}`;
+}
+if (disasterValue !== "") { 
+  document.getElementById("disasterpara").textContent = `Disaster Type: ${disasterText}`;
+}
+if (orgValue !== "") { 
+  document.getElementById("orgpara").textContent = `Organization: ${orgText}`;
+}
 
 
 // const reportUrl = `https://api.reliefweb.int/v1/reports?appname=apidoc&query[value]=${searchReport}`
@@ -20,7 +42,7 @@ let response = async function () {
   await axios.get(reportUrl).then(res => {
     console.log(res.data);
 
-    const reportData = res.data.data
+    const reportData = res.data.data;
     for (let i = 0; i < reportData.length; i++) { 
 
       let newLi = document.createElement('li');
@@ -32,6 +54,10 @@ let response = async function () {
       newLi.appendChild(newA);
       document.getElementById('title_section').appendChild(newLi);    
     }
+    if (reportData.length === 0) { 
+      newA1.remove();
+    }
+
   }).catch(err => { 
     console.log(err)
   })
@@ -123,14 +149,10 @@ document.getElementById('nextTitle').addEventListener('click', async (e) => {
 
     const responseThree = await axios.get(`https://api.reliefweb.int/v1/reports?appname=apidoc&query[value]=${searchReport}&filter[operator]=AND&filter[conditions][0][operator]=AND&filter[conditions][0][conditions][0][field]=country.name&filter[conditions][0][conditions][0][value]=${countryValue}&filter[conditions][0][conditions][1][operator]=AND&filter[conditions][0][conditions][1][field]=language.id&filter[conditions][0][conditions][1][value]=${langValue}&filter[conditions][2][field]=source.type.id&filter[conditions][2][value]=${orgValue}&filter[conditions][3][field]=disaster.type.id&filter[conditions][3][value]=${disasterValue}&offset=${num}&limit=10`);
     console.log(responseThree.data);
-
-    // let totalCount = responseThree.data.totalCount
-    // reportsNum = totalCount - num;
-
-    // pageInfo.textContent = `${num} of ${reportsNum}`
+    
+    
     let totalCount = Math.ceil((responseThree.data.totalCount + 1) / 10) * 10;
     console.log(totalCount);
-
 
     if (num < totalCount) {
       document.getElementById('title_section').innerHTML = ""
@@ -145,8 +167,6 @@ document.getElementById('nextTitle').addEventListener('click', async (e) => {
       newA1.removeAttribute("id", 'nextTitle');
       console.log("stop")
     }
-
-
   
   } catch (e) { 
     console.log(e)
@@ -161,3 +181,18 @@ document.querySelector('.hamburger').addEventListener('click', () => {
 })
 
 
+/* The code below states that whenever the user clicks any part of the window, the dropdown will close.The if statement states that if user click any where but the button, then it matches () will return false and with ! this will turn false into true. */
+
+window.onclick = function(e) {
+
+  if (!e.target.matches('.hambtn')) {
+    
+	var hamcontent = document.getElementsByClassName("ham-dropdowncontent");
+    	for (let i = 0; i < hamcontent.length; i++) {
+      		let openHamContent = hamcontent[i];
+      		if (openHamContent.classList.contains('show')) {
+        	openHamContent.classList.remove('show');
+      }
+    }
+  }
+}

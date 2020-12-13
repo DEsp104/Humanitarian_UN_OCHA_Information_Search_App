@@ -10,6 +10,21 @@
     font-size: 6vw;
   }
 
+  nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    position: relative;
+    top: 22px;
+    height: 1%;
+    margin-right: 2.25rem;
+    font-size: 4.2vw;
+    color: black;
+    border: red 2px solid;
+    border-radius: 2px;
+    padding: 2px 4px;
+  }
 
   /* for hamburger to pop up when clicked */
   .ham-dropdowncontent {
@@ -35,7 +50,7 @@
   #myDropdown a {
     width: 100%;
     display: inline-block;
-    padding: 10px 4px;
+    padding: 10px 0px;
     text-decoration: none;
     color: black;
     text-align: center;
@@ -156,49 +171,30 @@
 
   #title_section {
     font-size: 4.2vw;
-
-}
-
-  #prevTitle2, #nextTitle {
-    font-size: 1rem;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    width: 35px;
-    height: 35px;
-    padding: 6px 0;
-
   }
 
   #prevTitle2, #nextTitle {
     margin: 0;
     position: absolute;
     top: 50%;
-
   }
 
   #prevTitle2 {
     left: -8%;
-
-
     width: 0; 
     height: 0; 
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent; 
     border-right:30px solid #28BFE6; 
-
   }
 
   #nextTitle {
     left: 108%;
-
-
     width: 0;
     height: 0;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     border-left: 30px solid #28BFE6;
-
   }
 
   #info{
@@ -235,12 +231,7 @@
     .show {
       display: block;
     }
-
-  
-
-}
-
-
+  }
 
 
 
@@ -283,6 +274,8 @@
     border: red 2px solid;
     border-radius: 2px;
     padding: 2px 4px;
+    background-color: white;
+    cursor: pointer;
   }
 
   /* for hamburger to pop up when clicked */
@@ -309,7 +302,7 @@
   #myDropdown a {
     width: 100%;
     display: inline-block;
-    padding: 10px 4px;
+    padding: 10px 0px;
     text-decoration: none;
     color: black;
     text-align: center;
@@ -441,17 +434,6 @@
   
     #title_section {
       font-size: 2.2vw;
-
-  }
-  
-    #prevTitle2, #nextTitle {
-      top: 16%;
-      margin-bottom: 10%;
-      text-align: center;
-      left: 40%;
-      padding: 1% 2%;
-      font-size: 2vw;
-
     }
   
     #prevTitle2, #nextTitle {
@@ -468,7 +450,6 @@
   
     #nextTitle {
       left: 103%;
-
     }
   
     #info{
@@ -553,15 +534,13 @@
   font-size: 1.3vw;
 }
 
-
 /* Styling for report page */
 #prevTitle2, #nextTitle {
   position: relative;
   top: 108px;
-  left: 50%;
+  left: 48%;
   font-size: 1vw;
 }
-
 
 }
 
@@ -637,17 +616,7 @@
       #title_section {
         font-size:  1.5vw;
     }
-
-      #prevTitle2, #nextTitle {
-        top: 32px;
-        margin-bottom: 10%;
-        text-align: center;
-        left: 40%;
-        padding: 1% 2%;
-        font-size: 1.3vw;
-      }
-
-
+    
 
     
       #info{
@@ -712,13 +681,6 @@
         font-size:  1.3vw;
     }
     
-
-      #prevTitle2, #nextTitle {
-        top: 52px;
-        font-size: 1vw;
-      }
-
-
     
       #info{
         margin: 0 8%;

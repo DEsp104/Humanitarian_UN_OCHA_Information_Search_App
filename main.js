@@ -1,29 +1,9 @@
 import Axios from 'axios';
 
-const navSlide= () => {
-  //navigation menu slides into screen from the side
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  const navLinks = document.querySelectorAll('.nav-links li');
-  
-  //Toggle Navigation
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
-  });
-    
-  //Animate Links on Sliding Nav
-  // navLinks.forEach((link,index) =>{
-  //     if(link.style.animation) {
-  //       link.style.animation = '';
-  //     } else {
-  //         link.style.animation=`navLinkFade 0.5s ease forwards ${index /7 + 1.5}s`;
-  //         }
-  //         console.log(index / 7);
-  //       });
-}
-navSlide();
-
-
+//clear anything on local storage  page is on load
+window.addEventListener('load', () => {
+  localStorage.clear();
+});
 
 let getReport = document.getElementById("getReports");
 // console.log(getReport)
@@ -69,8 +49,6 @@ getReport.addEventListener('click', () => {
   }
 
   searchReportInput.value = "";
-  //to delete the previous value saved in the local storage
-  localstorage.clear();
 })
 
 
@@ -99,6 +77,44 @@ let countryResponse = async function () {
 
 countryResponse();
 
+//to get the actual text of language selection
+document.getElementById("languageSelect").addEventListener("change", (e) => {
+  let langText = e.target.options[e.target.selectedIndex].text;
+  if (langText === "Choose language") { 
+    langText = 'Non Given'
+  } else {
+    langText = e.target.options[e.target.selectedIndex].text;
+  }
+  localStorage.setItem('lang-text', langText);
+})
+ 
+document.getElementById("organizationSelect").addEventListener("change", (e) => {
+  let orgText = e.target.options[e.target.selectedIndex].text;
+  if (orgText === "Organization type") {
+    orgText = 'Non Given'
+  } else { 
+    orgText = e.target.options[e.target.selectedIndex].text;
+  }
+  localStorage.setItem('org-text', orgText);
+})
+ 
+document.getElementById("disasterSelect").addEventListener("change", (e) => {
+  let disasterText = e.target.options[e.target.selectedIndex].text;
+  if (disasterText === "Select disaster") { 
+    disasterText = 'Non Given'
+  } else {
+    disasterText = e.target.options[e.target.selectedIndex].text;
+  }
+    
+    
+  localStorage.setItem('disaster-text', disasterText);
+})
+ 
+
+
+// let sel = document.getElementById("languageSelect");
+// let text = sel.options[sel.selectedIndex].text;
+// console.log(text);
 
 //Below is the code to open the nav up when hamburger icon is clicked
 
@@ -120,8 +136,8 @@ window.onclick = function(e) {
       }
     }
   }
-
 }
+
 
 
 

@@ -8,6 +8,28 @@ let countryValue = localStorage.getItem('country-value');
 let disasterValue = localStorage.getItem('disaster-value');
 let orgValue = localStorage.getItem('org-value');
 
+//get text from keyword, disaster, lang, org, and country
+let langText = localStorage.getItem('lang-text');
+let disasterText = localStorage.getItem('disaster-text');
+let orgText = localStorage.getItem('org-text');
+
+//Below is the code to populate the parameter
+
+if (searchReport !== "") { 
+  document.getElementById("keypara").textContent = `Keywords(s): ${searchReport}`;
+}
+if (countryValue !== "") { 
+  document.getElementById("countrypara").textContent = `Country: ${countryValue}`;
+}
+if (langValue !== "") { 
+  document.getElementById("langpara").textContent = `Language: ${langText}`;
+}
+if (disasterValue !== "") { 
+  document.getElementById("disasterpara").textContent = `Disaster Type: ${disasterText}`;
+}
+if (orgValue !== "") { 
+  document.getElementById("orgpara").textContent = `Organization: ${orgText}`;
+}
 
 
 // const reportUrl = `https://api.reliefweb.int/v1/reports?appname=apidoc&query[value]=${searchReport}`
@@ -159,5 +181,4 @@ document.getElementById('nextTitle').addEventListener('click', async (e) => {
 document.querySelector('.hamburger').addEventListener('click', () => {
 	document.getElementById("myDropdown").classList.toggle("show");
 })
-
 

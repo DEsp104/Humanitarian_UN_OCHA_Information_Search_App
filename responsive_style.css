@@ -4,6 +4,11 @@
     padding: 21px 12px;   
     font-size: 5vw;
   }
+  
+  h1::first-letter {
+    color: #f09f54;
+    font-size: 6vw;
+  }
 
   nav ul {
     display: none;
@@ -134,6 +139,31 @@
   }
 
   /* styling for report page */
+  #searchParaText{
+    background-color: white;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 17%;
+    padding: 0 5%;
+    border: 1px black solid;
+  }
+
+  #header2Para{
+    position: relative;
+    top: 30px;
+    font-size: 4.8vw;
+    margin-left: 2%;
+    border-left: #28BFE6 solid 10px;
+    text-indent: 1%;
+  }
+
+  #searchParaText p {
+    font-size: 4.2vw
+  }
+
+  #keypara {
+    margin-top: 5%;
+  }
 
   .header2_for_other {
     font-size: 4.8vw
@@ -246,7 +276,12 @@
 
   header h1 {
     padding: 20px 10px;   
-    font-size: 4.5vw;
+    font-size: 4vw;
+  }
+
+  h1::first-letter {
+    color: #f09f54;
+    font-size: 5vw;
   }
 
   nav ul {
@@ -380,8 +415,43 @@
 
     /* styling for report page */
 
+    #searchParameter {
+      margin-top: 3%;
+    }
+    
+    #searchParaText{
+      display: flex;
+      background-color: white;
+      padding: 0 2%;
+      border: 1px black solid;
+      margin: 0 8%;
+    }
+
+    .flexitems{
+      width: 33.33%;
+    }
+  
+    #header2Para{
+      /* position: relative;
+      top: 30px; */
+      font-size: 2.8vw;
+      border-left: #28BFE6 solid 10px;
+      text-indent: 1%;
+      margin-left: 2%;
+    }
+  
+    #searchParaText p {
+      font-size: 2.2vw;
+      margin: 0;
+      padding: 1% 0;
+    }
+  
+    #keypara {
+      margin-top: 5%;
+    }
+
     .header2_for_other {
-      font-size: 2.6vw
+      font-size: 2.8vw;
     }
   
     #title_section {
@@ -566,6 +636,15 @@
 
       /* styling for report page */
 
+    
+      #header2Para{
+        font-size: 2vw;
+      }
+    
+      #searchParaText p {
+        font-size: 1.5vw;
+      }
+
       .header2_for_other {
         font-size: 2vw
       }
@@ -631,6 +710,14 @@
 
 
       /* styling for report page */
+    
+      #header2Para{
+        font-size: 1.8vw;
+      }
+    
+      #searchParaText p {
+        font-size: 1.3vw;
+      }
 
       .header2_for_other {
         font-size: 1.8vw

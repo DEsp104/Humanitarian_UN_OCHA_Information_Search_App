@@ -1,8 +1,14 @@
-// import axios from 'axios'
+import axios from 'axios'
 
+//---------
+//filter[field]=country&filter[value]=nicaragua&fields[include][]=country
 
+// https://api.reliefweb.int/v1/reports?appname=apidoc&filter[operator]=AND&filter[conditions][0][field]=headline&filter[conditions][1][field]=country&filter[conditions][1][value]=France
 
-// let titleId = localStorage.getItem('report-id');
+// https://api.reliefweb.int/v1/reports?appname=apidoc&filter[operator]=AND&filter[conditions][0][field]=disaster&filter[conditions][1][field]=country&filter[conditions][1][value]=Nicaragua&fields[include][]=disaster
+
+//----------
+// let typeofDisaster = localStorage.getItem('report-id');
 // const reportIdByIdUrl = `https://api.reliefweb.int/v1/reports/${titleId}`
 //https://api.reliefweb.int/v1/reports?appname=rwint-user-0&profile=list&preset=latest&slim=1&query[value]=disaster_type.id%3A4719&query[operator]=AND
 

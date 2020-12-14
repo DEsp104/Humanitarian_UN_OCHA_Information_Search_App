@@ -17,7 +17,7 @@ body {
 
 header{
   display: flex;
-  background-color: white;
+  background-color: #254f86;
 }
 
 h1 {
@@ -29,6 +29,7 @@ h1 {
   padding: 40px 10px;
   width: 32%;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1::first-letter {
@@ -37,9 +38,11 @@ h1::first-letter {
 }
 
 nav {
+  color: #254f86;
   margin: 0 auto;
   width: 68%;
-  
+  background-color: #254f86;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav ul {
@@ -49,15 +52,17 @@ nav ul {
   list-style: none;
   height: 100%;
   margin: 0;
+  
 }
 
 nav li {
   margin-right: 5%;
+
   
 }
 
 nav a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bolder;
   padding: 4px 20px;
@@ -65,14 +70,14 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #C0130E;
+  background-color: #27C3CD;
   color: white;
   padding: 4px 20px;
 }
 
 /* when on index.html only, keep Home highlighted */
 #mark {
-  background-color: #C0130E;
+  background-color: #27C3CD;
   color: white;
   padding: 4px 20px;
 }
@@ -318,7 +323,7 @@ select {
 }
 
 #title_section a:hover {
-  color: red;
+  color: #254f86;
 }
 
 #prevTitle2, #nextTitle {

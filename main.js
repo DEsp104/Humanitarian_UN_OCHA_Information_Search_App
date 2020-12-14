@@ -1,6 +1,6 @@
 import Axios from 'axios';
 
-//clear anything on local storage  page is on load
+//clear anything on local storage page is on load
 window.addEventListener('load', () => {
   localStorage.clear();
 });

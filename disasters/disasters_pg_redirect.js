@@ -1,7 +1,12 @@
 import axios from 'axios';
 
 
-// //get value from keyword, disaster, lang, org, and country
+//get value from type of disasters buttons
+// getDataButton.addEventListener("click",(e)=>{
+//   e.preventDefault();
+  // let url = https://api.reliefweb.int/v1/reports?appname=rwint-user-0&profile=list&preset=latest&slim=1&query[value]=disaster_type.id%3A4719&query[operator]=AND
+//keyword, disaster, lang, org, and country
+
 // let searchReport = localStorage.getItem('value-name');
 // let langValue = localStorage.getItem('lang-value');
 // let countryValue = localStorage.getItem('country-value');

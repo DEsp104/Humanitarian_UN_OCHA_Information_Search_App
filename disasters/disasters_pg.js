@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 
 
 //get value from type of disasters buttons

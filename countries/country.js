@@ -1,3 +1,9 @@
+//clear anything on local storage  page is on load
+window.addEventListener('load', () => {
+  localStorage.clear();
+});
+
+
 //Populate the country page with countries name
 const url = 'https://restcountries.eu/rest/v2/all?fields=name';
 const countryList = document.getElementById('country_list');
@@ -6,7 +12,7 @@ let countryResp= async function () {
   await axios.get(url).then(res => { 
     // console.log(res.data);
     const countries = res.data;
-    console.log(countries)
+    // console.log(countries)
 
     let count = 0;
     let num = 0;
@@ -21,7 +27,7 @@ let countryResp= async function () {
         let liElement = document.createElement('li');
         let aElement = document.createElement('a');
         aElement.textContent = countries[j].name;
-        aElement.setAttribute('href', './countryinfo.html')
+        aElement.setAttribute('id', `${countries[j].name}`)
         liElement.appendChild(aElement);
         ulElement.appendChild(liElement);
       }
@@ -37,18 +43,31 @@ countryResp();
 
 //get name of any country when clicked 
 countryList.addEventListener('click', async (e) => { 
-  console.log(e.target.textContent);
-  let selectedCountry = e.target.textContent;
   try {
-
-    const countryInfResp = await axios.get(`https://api.reliefweb.int/v1/countries?appname=apidoc&filter[field]=name&filter[value]=${selectedCountry}`);
-    console.log(countryInfResp.data);
-
+    console.log(e.target.id);
+    let selectedCountry = e.target.id;
+    console.log(selectedCountry);
+    
+    let countryUrl = `https://api.reliefweb.int/v1/countries?filter[field]=name&filter[value]=${selectedCountry}`
+    
+    const responseCountry = await axios.get(countryUrl);
+    
+    let href = responseCountry.data.data[0].href
+    console.log(href);
+    //name of country saved in local storage  
+    localStorage.setItem('href', href);
+    
+    if (selectedCountry) {
+      location.replace('./countryinfo.html');
+    }
   } catch (e) { 
     console.log(e);
   }
 
+  
+
 });
+
 
 
 //Below is the code to open the nav up when hamburger icon is clicked

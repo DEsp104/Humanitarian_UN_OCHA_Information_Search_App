@@ -51,7 +51,7 @@ let response = async function () {
       newLi.appendChild(newA);
       document.getElementById('title_section').appendChild(newLi);    
     }
-    if (reportData.length === 0) { 
+    if (reportData.length === 0 || reportData.length < 10) { 
       newA1.remove();
     }
 

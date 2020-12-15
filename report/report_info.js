@@ -1,6 +1,3 @@
-import axios from 'axios'
-
-
 
 let titleId = localStorage.getItem('report-id');
 const reportIdByIdUrl = `https://api.reliefweb.int/v1/reports/${titleId}`

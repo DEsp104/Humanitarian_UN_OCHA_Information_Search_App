@@ -1,5 +1,3 @@
-import Axios from 'axios';
-
 //clear anything on local storage  page is on load
 window.addEventListener('load', () => {
   localStorage.clear();
@@ -59,7 +57,7 @@ const url = 'https://restcountries.eu/rest/v2/all?fields=name';
 
 
 let countryResponse = async function () { 
-  await Axios.get(url).then(res => { 
+  await axios.get(url).then(res => { 
     // console.log(res.data);
     const countries = res.data;
     for (let i = 0; i < countries.length; i++) { 
@@ -106,15 +104,9 @@ document.getElementById("disasterSelect").addEventListener("change", (e) => {
     disasterText = e.target.options[e.target.selectedIndex].text;
   }
     
-    
   localStorage.setItem('disaster-text', disasterText);
 })
  
-
-
-// let sel = document.getElementById("languageSelect");
-// let text = sel.options[sel.selectedIndex].text;
-// console.log(text);
 
 //Below is the code to open the nav up when hamburger icon is clicked
 
@@ -137,8 +129,3 @@ window.onclick = function(e) {
     }
   }
 }
-
-
-
-
-

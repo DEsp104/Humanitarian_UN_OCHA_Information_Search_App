@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../responsive_style.css">
+  <title>Phase 1 Project Prototype</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- Axio is js library which uses ajax concept -->
+  <script src="./about.js" type="module" defer></script>
+  <script src="https://kit.fontawesome.com/606dd3ae68.js" crossorigin="anonymous"></script>
   <title>About Us</title>
 </head>
 <body>
@@ -11,14 +16,24 @@
     <h1>WeMundo</h1>
     <nav>
       <ul>
-        <li><a href="#" title="Home" id="mark">Home</a></li>
-        <li><a href="#" title="Countries">Countries</a></li> 
-        <li><a href="#" title="Disasters">Disasters</a></li>
-        <li><a href="#" 
-        title="About">About</a></li>
-        <li><a href="#" title="FAQs">FAQs</a></li>
+        <li><a href="/" title="Home">Home</a></li>
+        <li><a href="../countries/country.html" title="Countries">Countries</a></li> 
+        <li><a href="../disasters/disasters.html" title="Disasters">Disasters</a></li>
+        <li><a href="../about/about_page.html" title="About" id = "mark">About</a></li>
+        <li><a href="../info_faqs/Info_FAQs.html" title="FAQs">FAQs</a></li>
       </ul>
     </nav>
+        <!--  Hamburger  -->
+        <div class="hamburger">
+          <i id = ham-icon class="hambtn fas fa-bars"></i>
+          <ul id = "myDropdown" class="ham-dropdowncontent">
+            <li><a href="/" title="Home">Home</a></li>
+            <li id = "mark1"><a href="#" title="About">About</a></li>
+            <li><a href="../disasters/disasters.html" title="Disasters">Disasters</a></li>
+            <li><a href="../countries/country.html" title="Countries">Countries</a></li>
+            <li><a href="../info_faqs/Info_FAQs.html" title="FAQs">FAQs</a></li>
+          </ul>
+        </div>
   </header>
 
   <h2 class = "header2_for_other">What Our App Does:</h2>
@@ -28,6 +43,5 @@
 
 
 
-  <!-- <script src="./report_info.js"></script> -->
 </body>
 </html>

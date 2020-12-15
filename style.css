@@ -6,9 +6,9 @@ html {
 	box-sizing: inherit; /* This will take any of the elements, including psedo-elements, and apply the border-box value to the box-sizing. Remember this is being inherited from the <html> element. *(means the universal CSS selector) */
 }
 
-* {
+/* * {
   border: 1px solid red !important;
-}
+} */
 
 body {
   margin: 0;

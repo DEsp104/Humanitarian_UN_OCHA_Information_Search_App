@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./responsive_style.css">
   <title>Phase 1 Project Prototype</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- Axio is js library which uses ajax concept -->
+  <script src="./main.js" type="module" defer></script>
   <script src="https://kit.fontawesome.com/606dd3ae68.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,22 +16,23 @@
     <nav>
       <ul>
         <li><a href="#" title="Home" id="mark">Home</a></li>
-        <li><a href="#" title="About">About</a></li>
-        <li><a href="#" title="Disasters">Disasters</a></li>
-        <li><a href="#" title="Countries">Countries</a></li>
-        <li><a href="#" title="FAQs">FAQs</a></li>
+        <li><a href="./countries/country.html" title="Countries">Countries</a></li>
+        <li><a href="./disasters/disasters.html" title="Disasters">Disasters</a></li>
+        <li><a href="./about/about_page.html" title="About">About</a></li>
+        <li><a href="./info_faqs/Info_FAQs.html" title="FAQs">FAQs</a></li>
       </ul>
     </nav>
+    <!--  Hamburger  -->
     <div class="hamburger">
       <i id = ham-icon class="hambtn fas fa-bars"></i>
       <ul id = "myDropdown" class="ham-dropdowncontent">
         <li id = "mark1"><a href="#" title="Home" id="">Home</a></li>
         <li><a href="#" title="About">About</a></li>
         <li><a href="#" title="Disasters">Disasters</a></li>
-        <li><a href="#" title="Countries">Countries</a></li>
+        <li><a href="./countries/country.html" title="Countries">Countries</a></li>
         <li><a href="#" title="FAQs">FAQs</a></li>
       </ul>
-    </div><!-- We need to put a hamburger  -->
+    </div>
   </header>
 
   <div id = "flex">
@@ -138,6 +141,6 @@
 
 
 
-  <script src="./main.js" type="text/javascript" async defer></script>
+  
 </body>
 </html>

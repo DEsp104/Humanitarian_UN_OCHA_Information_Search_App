@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../responsive_style.css">
+  <script src="https://kit.fontawesome.com/606dd3ae68.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- Axio is js library which uses ajax concept -->
+  <script src="./country.js" type="module" defer></script>
+  <title>Report Info:</title>
+</head>
+<body>
+  <header>
+    <h1>WeMundo</h1>
+    <nav>
+      <ul>
+        <li><a href="/" title="Home">Home</a></li>
+        <li><a href="#" title="Countries" id = "mark">Countries</a></li> 
+        <li><a href="../disasters/disasters.html" title="Disasters">Disasters</a></li>
+        <li><a href="../about/about_page.html" title="About">About</a></li>
+        <li><a href="../info_faqs/Info_FAQs.html" title="FAQs">FAQs</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <i id="ham-icon" class="hambtn fas fa-bars"></i>
+      <ul id = "myDropdown" class="ham-dropdowncontent">
+        <li><a href="/" title="Home">Home</a></li>
+        <li><a href="../about/about_page.html" title="About">About</a></li>
+        <li><a href="../disasters/disasters.html" title="Disasters">Disasters</a></li>
+        <li id = "mark1"><a href="#" title="Countries">Countries</a></li>
+        <li><a href="../info_faqs/Info_FAQs.html" title="FAQs">FAQs</a></li>
+      </ul>
+    </div><!-- We need to put a hamburger  -->
+  </header>
+
+  <h2 class="header2_for_other">List of Countries:</h2>
+  <div id="country_list"></div>
+
+
+
+
+  <script src="./country.js"></script>
+</body>
+</html>

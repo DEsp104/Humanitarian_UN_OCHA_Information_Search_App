@@ -178,6 +178,17 @@
 //   }
 // })
 
+// let i = 1;
+// let body = document.getElementsByTagName("body")[0];
+
+// for (i; i <= 21; i++) {
+//   let button = document.createElement("button");
+//   button.innerHTML = 'Button '+i;
+//   body.appendChild(button);
+//   button.addEventListener ("click", function() {
+//     alert(this.innerHTML);
+//   });
+// }
 
 //Below is the code to open the nav up when hamburger icon is clicked
 

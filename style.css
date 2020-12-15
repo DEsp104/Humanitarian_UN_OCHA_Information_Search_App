@@ -30,11 +30,10 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
-.logo img{
+.logo img {
   position: relative;
   margin-top: 15px;
   margin-left: 10px;
-
 }
 h1::first-letter {
   color: #f09f54;
@@ -386,4 +385,30 @@ select {
   font-weight: bolder;
   color: black;
   padding: 0.5% 1%;
+}
+
+.btn-group button {
+  background-color: #254f86; /* Cyan background */
+  border: 1px solid #27c3cd; /* Green border */
+  color: white; /* White text */
+  padding: 24px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  display: flex;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: flex;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #27c3cd;
 }

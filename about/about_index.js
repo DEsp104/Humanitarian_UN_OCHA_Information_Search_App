@@ -4,7 +4,6 @@ document.querySelector('.hamburger').addEventListener('click', () => {
 	document.getElementById("myDropdown").classList.toggle("show");
 })
 
-
 /* The code below states that whenever the user clicks any part of the window, the dropdown will close.The if statement states that if user click any where but the button, then it matches () will return false and with ! this will turn false into true. */
 
 window.onclick = function(e) {

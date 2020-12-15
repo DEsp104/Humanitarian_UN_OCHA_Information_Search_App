@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../responsive_style.css">
+  <script src="https://kit.fontawesome.com/606dd3ae68.js" crossorigin="anonymous"></script>
+  <script src="./faqs_index.js" type="module" defer></script>
   <title>Information and Frequently Asked Questions:</title>
 </head>
 <body>
@@ -11,13 +14,24 @@
     <h1>WeMundo</h1>
     <nav>
       <ul>
-        <li><a href="../index.html" title="Home">Home</a></li>
-        <li><a href="#" title="About">About</a></li>
-        <li><a href="#" title="Disasters">Disasters</a></li>
-        <li><a href="#" title="Countries">Countries</a></li>
-        <li><a href="#" title="FAQs">FAQs</a></li>
+        <li><a href="/" title="Home">Home</a></li>
+        <li><a href="../countries/country.html" title="Countries">Countries</a></li> 
+        <li><a href="../disasters/disasters.html" title="Disasters">Disasters</a></li>
+        <li><a href="../about/about_page.html" title="About">About</a></li>
+        <li><a href="#" title="FAQs" id = "mark">FAQs</a></li>
       </ul>
     </nav>
+    <!-- We need to put a hamburger  -->
+    <div class="hamburger">
+      <i id="ham-icon" class="hambtn fas fa-bars"></i>
+      <ul id = "myDropdown" class="ham-dropdowncontent">
+        <li><a href="/" title="Home">Home</a></li>
+        <li><a href="../about/about_page.html" title="About">About</a></li>
+        <li><a href="../disasters/disasters.html" title="Disasters">Disasters</a></li>
+        <li><a href="../countries/country.html" title="Countries">Countries</a></li>
+        <li id = "mark1"><a href="#" title="FAQs">FAQs</a></li>
+      </ul>
+    </div>
   </header>
 
   <h2 class = "header2_for_other">Frequently Asked Questions:</h2>
@@ -27,6 +41,5 @@
 
 
 
-  <!-- <script src="./report_info.js"></script> -->
 </body>
 </html>

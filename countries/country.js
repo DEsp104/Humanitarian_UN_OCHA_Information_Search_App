@@ -1,6 +1,3 @@
-import axios from 'axios';
-
-
 //Populate the country page with countries name
 const url = 'https://restcountries.eu/rest/v2/all?fields=name';
 const countryList = document.getElementById('country_list');
@@ -22,9 +19,9 @@ let countryResp= async function () {
       for (let j = num; j < count; j++) { 
         let ulElement = countryList.children[i]
         let liElement = document.createElement('li');
-        let aElement = document.createElement('a')
+        let aElement = document.createElement('a');
         aElement.textContent = countries[j].name;
-        aElement.setAttribute('href', './countries_info.html')
+        aElement.setAttribute('href', './countryinfo.html')
         liElement.appendChild(aElement);
         ulElement.appendChild(liElement);
       }
@@ -76,3 +73,4 @@ window.onclick = function(e) {
     }
   }
 }
+

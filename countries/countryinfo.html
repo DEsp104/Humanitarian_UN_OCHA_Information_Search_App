@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../responsive_style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- Axio is js library which uses ajax concept -->
+  <script src="./country_info.js" text="module" defer></script>
   <script src="https://kit.fontawesome.com/606dd3ae68.js" crossorigin="anonymous"></script>
-  <title>Report Page</title>
+  <title>Report Info:</title>
 </head>
 <body>
   <header>
@@ -21,7 +23,7 @@
       </ul>
     </nav>
     <div class="hamburger">
-      <i id = ham-icon class="hambtn fas fa-bars"></i>
+      <i id="ham-icon" class="hambtn fas fa-bars"></i>
       <ul id = "myDropdown" class="ham-dropdowncontent">
         <li><a href="../index.html" title="Home" id="">Home</a></li>
         <li><a href="../about/about_pg.html" title="About">About</a></li>
@@ -32,13 +34,12 @@
     </div><!-- We need to put a hamburger  -->
   </header>
 
+  <h2 class="header2_for_other">Country Description:</h2>
+  <div id="country_description"></div>
 
 
-  <h2 class = "header2_for_other">Frequently Asked Questions</h2>
 
-  <div id = "info">
-    <ul id = title_section></ul>
-  </div>
-  <script src="./faqs_pg_redirect.js" type="text/javascript" asyn defer></script>
+
+  <!-- <script src="./countries_info.js"></script> -->
 </body>
 </html>

@@ -1,6 +1,3 @@
-import axios from 'axios';
-
-
 //get value from keyword, disaster, lang, org, and country
 let searchReport = localStorage.getItem('value-name');
 let langValue = localStorage.getItem('lang-value');

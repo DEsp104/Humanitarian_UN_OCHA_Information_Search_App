@@ -126,7 +126,7 @@
 
   .outer-container > .inner-container {
     margin-right: 4%;
-    margin-left: 8%;
+    margin-left: 7%;
     margin-top: 2%;
 }
 
@@ -265,6 +265,48 @@
     padding: 3% 0;
   }
 
+  /* Country info Page */
+
+  #country_description{
+    background-color: white;
+    margin-top: 14%;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 2px 0;
+  }
+
+  #country_description ul {
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+  #country_description ul li p a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  #country_description ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #country_description img {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+  }
+
+  #country_description > h3 {
+    padding-left: 10px;
+  }
+
+  #country_description li {
+    padding: 0 10%;
+}
 
 }
 
@@ -533,6 +575,49 @@
     margin: 8% 0;
     border-bottom: 2px #e5e5e5 solid;
   }
+
+  #country_description{
+    background-color: white;
+    margin-top: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 2px 0;
+  }
+
+  #country_description ul {
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+  #country_description li {
+    padding: 0 21%;
+
+  }
+
+  #country_description ul li p a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  #country_description ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #country_description img {
+    width: calc(100% - 150px);
+    height: calc(100% - 150px);
+  }
+
+  #country_description > h3 {
+    padding-left: 2%;
+    color: #254f86;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -732,19 +817,19 @@
     left: 71%;
   }
 
-  #country_list ul {
-    list-style-type: none;
-    font-size: 1.5vw;
-    padding: 2% 1%;
-    width: 16.7%;
-    
+
+  /* Country page */
+
+  #country_description li {
+    padding: 0 31%;
+
   }
 
-  #country_list li {
-    cursor: pointer;
-    margin: 8% 0;
-    border-bottom: 2px #e5e5e5 solid;
+  #country_description > h3 {
+    text-align: center;
+    font-size: 2.2vw;
   }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -808,6 +893,18 @@
   #back_link {
     left: 71%;
   }
+
+    /* Country page */
+
+    #country_description li {
+      padding: 0 35%;
+  
+    }
+  
+    #country_description > h3 {
+      text-align: center;
+      font-size: 2.5vw;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */

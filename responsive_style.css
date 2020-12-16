@@ -352,13 +352,17 @@
 /* Disasters Page */
 
 #disasterType_List {
-  margin-top: 17%;
+  display: flex;
+  border-radius: 6px;
+  position: relative;
+  top: 45px;
   background-color: white;
-  margin-left: 8%;
-  margin-right: 8%;
   padding: 1% 0;
   border-radius: 6px;
-
+  margin: 0 1%;
+  justify-content: space-around;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 #disasterType_List ul {

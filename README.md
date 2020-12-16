@@ -39,11 +39,12 @@ This is a web application that allows users to gather informational reports abou
 
 https://apidoc.rwlabs.org/
 
-- API enpoints used: Reports, Countries, Disasters, and Information Sources (publishers of information).
+- API enpoints used: Reports, Countries, Disasters, and References (publishers of information).
 
-### Google Maps Javascript API
+### REST Countries API
 
-- https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY
+- Information of current countries in the world.
+- https://restcountries.eu/rest/v2/all?fields=name
 
 ## Requirements:
 

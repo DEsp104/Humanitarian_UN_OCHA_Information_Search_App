@@ -400,6 +400,7 @@ select {
   justify-content: space-around;
   margin-left: 15%;
   margin-right: 15%;
+  text-align: center;
 }
 
 #disasterType_List ul {

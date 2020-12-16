@@ -9,7 +9,17 @@ let countryUrl = localStorage.getItem('href');
 
 let countryResponse = async function () { 
   await axios.get(countryUrl).then(res => { 
-    console.log(res)
+    console.log(res.data.data[0].fields["description-html"]);
+    let description = res.data.data[0].fields["description-html"];
+
+    if (description === undefined) {
+      document.getElementById("country_description").innerHTML = `
+      <h3>Nothing Found</h3>
+      <p>Apologies, but no description was found for the requestd country. Please search for another country.</p>`;
+    } else {
+      document.getElementById("country_description").innerHTML = `${description}`;
+    }
+
   }).catch(e => { 
     console.log(e);
   })

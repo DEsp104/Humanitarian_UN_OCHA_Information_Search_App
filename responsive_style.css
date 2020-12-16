@@ -10,6 +10,13 @@
     font-size: 6vw;
   }
 
+  .logo img {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin: 0 auto;
+    width: 138%;
+  }
+
   nav ul {
     display: none;
   }
@@ -20,7 +27,7 @@
 
   .hamburger {
     position: relative;
-    top: 22px;
+    top: 30px;
     height: 1%;
     margin-right: 2.25rem;
     font-size: 4.2vw;
@@ -160,6 +167,12 @@
     font-size: 3vw;
   }
 
+  footer  {
+    margin-top: 9%;
+    margin-bottom: 2%;
+    font-size: 2.7vw;
+  }
+
   /* styling for report page */
   #searchParaText {
     background-color: white;
@@ -168,6 +181,7 @@
     margin-top: 17%;
     padding: 0 5%;
     border: 1px black solid;
+    border-radius: 2pc;
   }
 
   #header2Para {
@@ -307,14 +321,37 @@
     padding: 0 10%;
 }
 
+/* About page */
+
+#about_descr{
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+  top: 45px;
+  margin: 0 13%;
+  font-size: 4.2vw;
+}
+
+#about_descr h3, p{
+  padding: 2% 3%;
+  margin: 0;
+  margin-bottom: 1%;
+}
+
+#about_descr h3{
+  color: #254f86;
+  font-size: 4.8vw;
+}
+
+#about_descr a {
+  text-decoration: none;
+  color: #d58449;
+}
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  body {
-    background: linear-gradient(180deg, #dbe7f4, #ffffff 50%) no-repeat;
-  }
-
   header {
     background-color: #254f86;
   }
@@ -499,6 +536,10 @@
     margin-left: 2%;
   }
 
+  #searchParaText {
+    border-radius: 2pc;
+  }
+
   #searchParaText p {
     font-size: 2.2vw;
     margin: 0;
@@ -563,7 +604,6 @@
 
   #country_list ul {
     list-style-type: none;
-    font-size: 2.2vw;
     padding: 2% 1%;
     
   }
@@ -572,7 +612,17 @@
     cursor: pointer;
     margin: 8% 0;
     border-bottom: 2px #e5e5e5 solid;
+    font-size: 1.3vw;
   }
+
+  #country_list a {
+    color: black;
+  }
+
+  #country_list a:hover {
+    color: #254f86;
+  }
+  
 
   #country_description{
     background-color: white;
@@ -616,6 +666,36 @@
     padding-left: 2%;
     color: #254f86;
   }
+
+  /* About page */
+
+#about_descr{
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+  top: 45px;
+  margin: 0 13%;
+  font-size: 2.2vw;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+#about_descr h3, p{
+  padding: 0 3%;
+  margin: 0;
+  margin-bottom: 1%;
+}
+
+#about_descr h3{
+  color: #254f86;
+  font-size: 2.2vw;
+  margin: 1% 0;
+}
+
+#about_descr a {
+  text-decoration: none;
+  color: #d58449;
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -630,7 +710,7 @@
   }
 
   #getReports {
-    font-size: 1.4vw;
+    font-size: 1.6vw;
   }
 
   .hamburger {
@@ -706,9 +786,6 @@
 #nextTitle {
   left: 52%;
 }
-  #getReports {
-    font-size: 1.3vw;
-  }
 
   /* Styling for report page */
   #prevTitle2,
@@ -717,6 +794,15 @@
     top: 108px;
     left: 48%;
     font-size: 1vw;
+  }
+ /* About page */
+  #about_descr{
+    font-size: 2.2vw;
+  }
+  
+  #about_descr h3{
+    color: #254f86;
+    font-size: 2.5vw;
   }
 }
 
@@ -778,7 +864,7 @@
   }
 
   #getReports {
-    font-size: 1.13vw;
+    font-size: 1.45vw;
   }
 
   /* styling for report page */
@@ -825,9 +911,19 @@
 
   #country_description > h3 {
     text-align: center;
-    font-size: 2.2vw;
+    font-size: 1.5vw;
   }
 
+
+   /* About page */
+   #about_descr{
+    font-size: 1.5vw;
+  }
+  
+  #about_descr h3{
+    color: #254f86;
+    font-size: 1.7vw;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -855,8 +951,8 @@
   }
 
   #getReports {
-    font-size: 0.86vw;
-  }
+    font-size: 1vw;
+}
 
   /* styling for report page */
 
@@ -894,6 +990,11 @@
 
     /* Country page */
 
+    #country_list ul {
+      font-size: 1.3vw;
+    }
+  
+
     #country_description li {
       padding: 0 35%;
   
@@ -903,10 +1004,23 @@
       text-align: center;
       font-size: 2.5vw;
     }
+
+      /* About page */
+   #about_descr{
+    font-size: 1.3vw;
+  }
+  
+  #about_descr h3{
+    color: #254f86;
+    font-size: 1.5vw;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1400px) {
+
+
   #left-content h2 {
     margin: 0px;
     font-size: 2vw;

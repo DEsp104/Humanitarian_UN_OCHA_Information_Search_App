@@ -1,4 +1,3 @@
-import axios from 'axios';
 
 
 // //get value from keyword, disaster, lang, org, and country

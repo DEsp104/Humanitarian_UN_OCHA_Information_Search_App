@@ -21,8 +21,8 @@ let disasterTypeResp = async function () {
       let ulElement = document.createElement('ul');
       disasterTypeList.appendChild(ulElement);
       count += 21;
-      // console.log(ulElement)
-
+      
+  
       for (let j = num; j < count; j++) { 
         let ulElement = disasterTypeList.children[i]
         let liElement = document.createElement('li');
@@ -41,7 +41,33 @@ let disasterTypeResp = async function () {
 
   disasterTypeResp();
 
+// console.log(ulElement)
+//       for (let j = num; j < count; j++) { 
+//         let ulElement = disasterTypeList.children[i]
+//         let liElement = document.createElement('li');
+//         let aElement = document.createElement('a');
+//         aElement.textContent = disasterTypes.data[j].fields.name;
+//         aElement.setAttribute('id', `${disasterTypes.data[j].fields.code}`)
+//         aElement.setAttribute('', `${disasterTypes.data[j].fields.code}`)
+//         aElement.setAttribute('href', `./disasters_info.html`)
 
+//         liElement.appendChild(aElement);
+//         document.getElementById('title_section').appendChild(liElement);
+//         ulElement.appendChild(liElement);
+//       }
+//       num += 21
+
+//       if (disasterTypes.length === 0 || disasterTypes.length < 10) {
+//         newaElement.remove();
+//       }
+     
+//     }).catch(err => { 
+//       console.log(err);
+//     })
+//   }
+// }
+
+// disasterTypeResp();
 // get name of any disaster types are clicked 
 disasterTypeList.addEventListener('click', async (e) => {
   try {

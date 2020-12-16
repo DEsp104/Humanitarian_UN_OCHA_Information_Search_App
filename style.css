@@ -406,3 +406,7 @@ select {
 #disasterType_List ul {
   width: 27%;
 }
+
+#disasterType_List ul {
+  width: 45%;
+}

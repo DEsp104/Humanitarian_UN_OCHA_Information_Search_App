@@ -24,11 +24,10 @@
     height: 1%;
     margin-right: 2.25rem;
     font-size: 4.2vw;
-    color: black;
-    border: red 2px solid;
+    color: #d58449;
     border-radius: 2px;
     cursor: pointer;
-    background-color: white;
+    background-color: #264f86;
   }
 
   /* for hamburger to pop up when clicked */
@@ -63,7 +62,7 @@
 
   #myDropdown a:hover {
     color: white;
-    background-color: #27c3cd;
+    background-color: #4d9db9;
   }
 
   #myDropdown li:not(:last-child) {
@@ -71,7 +70,7 @@
   }
 
   #mark1 {
-    background-color: #27c3cd;
+    background-color: #4d9db9;
   }
 
   #mark1 a {
@@ -176,7 +175,7 @@
     top: 30px;
     font-size: 4.8vw;
     margin-left: 2%;
-    border-left: #28bfe6 solid 10px;
+    border-left: #70b289 solid 10px;
     text-indent: 1%;
   }
 
@@ -210,7 +209,7 @@
     height: 0;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-right: 30px solid #28bfe6;
+    border-right: 30px solid #4d9db9;
   }
 
   #nextTitle {
@@ -219,7 +218,7 @@
     height: 0;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-left: 30px solid #28bfe6;
+    border-left: 30px solid #70b289;
   }
 
   #info {
@@ -300,10 +299,9 @@
     height: 1%;
     margin-right: 2.25rem;
     font-size: 3.8vw;
-    color: black;
-    border: red 2px solid;
+    color: #d58449;
     border-radius: 2px;
-    background-color: white;
+    background-color: #264f86;
     cursor: pointer;
   }
 
@@ -339,7 +337,7 @@
 
   #myDropdown a:hover {
     color: white;
-    background-color: #27c3cd;
+    background-color: #4d9db9;
   }
 
   #myDropdown li:not(:last-child) {
@@ -347,7 +345,7 @@
   }
 
   #mark1 {
-    background-color: #27c3cd;
+    background-color: #4d9db9;
   }
 
   #mark1 a {

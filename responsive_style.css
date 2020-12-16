@@ -14,6 +14,10 @@
     display: none;
   }
 
+  #ham-icon {
+    padding: 2px 4px;
+  }
+
   .hamburger {
     position: relative;
     top: 22px;
@@ -23,7 +27,7 @@
     color: black;
     border: red 2px solid;
     border-radius: 2px;
-    padding: 2px 4px;
+    cursor: pointer;
   }
 
   /* for hamburger to pop up when clicked */
@@ -96,6 +100,8 @@
   #left-content {
     width: 100%;
     margin: 0;
+    margin-bottom: 8%;
+
   }
 
   #left-content h2 {
@@ -174,6 +180,7 @@
 
   #title_section {
     font-size: 4.2vw;
+    padding-bottom: 2%;
   }
 
   #prevTitle2,
@@ -260,7 +267,9 @@
   nav ul {
     display: none;
   }
-
+  #ham-icon {
+  padding: 2px 4px;
+  }
   .hamburger {
     position: relative;
     top: 22px;
@@ -270,7 +279,6 @@
     color: black;
     border: red 2px solid;
     border-radius: 2px;
-    padding: 2px 4px;
     background-color: white;
     cursor: pointer;
   }
@@ -345,6 +353,7 @@
   #left-content {
     width: 100%;
     margin: 0;
+    margin-bottom: 8%;
   }
 
   #left-content h2 {
@@ -535,6 +544,26 @@
     height: 29px;
   }
 
+#title_section{
+  padding-bottom: 2%;
+}
+
+/* Styling for report page */
+#prevTitle2, #nextTitle {
+  position: absolute;
+  top: 108%;
+  left: 48%;
+  font-size: 1vw;
+  margin-bottom: 2%;
+}
+
+#prevTitle2 {
+  left: 48%;
+}
+
+#nextTitle {
+  left: 52%;
+}
   #getReports {
     font-size: 1.3vw;
   }

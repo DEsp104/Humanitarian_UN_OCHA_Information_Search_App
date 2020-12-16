@@ -13,6 +13,7 @@ html {
 body {
   margin: 0;
   background-color: #dbe7f4;
+  position: relative;
 }
 
 header {
@@ -33,11 +34,10 @@ h1 {
 }
 
 .logo img {
-  position: flex;
   margin-top: 10px;
   margin-left: 10px;
   margin: 0 auto;
-  width: 110%;
+  width: 70%;
 
 }
 
@@ -122,7 +122,7 @@ input[type="text"] {
 }
 
 #reportText {
-  border: 1px solid black;
+  border: 1px solid #70b289;
   font-size: 0.92vw;
   color: black;
   height: 32px;
@@ -183,7 +183,7 @@ select {
   z-index: 0;
   border-right: 1px solid #70b289;
   border-top: 1px solid #70b289;
-  border-bottom: 1px solid b#70b289;
+  border-bottom: 1px solid #70b289;
 }
 
 .selectionStyle .selection-box {
@@ -420,7 +420,18 @@ select {
     color: white; 
   }
 
+  footer {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
 
+  footer p {
+    margin: 0%;
+    color: #4d9db9; 
+  }
+
+  
 
   /*#disasterButtons
   display: flex;

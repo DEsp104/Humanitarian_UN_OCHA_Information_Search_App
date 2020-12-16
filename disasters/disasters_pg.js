@@ -1,194 +1,76 @@
-// import axios from 'axios';
+//clear anything on local storage  page is on load
+window.addEventListener('load', () => {
+  localStorage.clear();
+});
 
 
-//get value from type of disasters buttons
-// getDataButton.addEventListener("click",(e)=>{
-//   e.preventDefault();
-  // let url = https://api.reliefweb.int/v1/reports?appname=rwint-user-0&profile=list&preset=latest&slim=1&query[value]=disaster_type.id%3A4719&query[operator]=AND
-//keyword, disaster, lang, org, and country
+//Populate the country page with countries name
+const disasterType_url = 'https://api.reliefweb.int/v1/references/disaster-types?';
+const disasterTypeList = document.getElementById('disasterType_List');
 
-// let searchReport = localStorage.getItem('value-name');
-// let langValue = localStorage.getItem('lang-value');
-// let countryValue = localStorage.getItem('country-value');
-// let disasterValue = localStorage.getItem('disaster-value');
-// let orgValue = localStorage.getItem('org-value');
+let disasterTypeResp = async function () {
+  await axios.get(disasterType_url).then(res => {
+    // console.log(res.data);
+    const disasterTypes = res.data;
+    // console.log(disasterTypes)
 
-// //get text from keyword, disaster, lang, org, and country
-// let langText = localStorage.getItem('lang-text');
-// let disasterText = localStorage.getItem('disaster-text');
-// let orgText = localStorage.getItem('org-text');
+    let count = 0;
+    let num = 0;
+    for (let i = 0; i <= 22; i++) {
+      // console.log(disasterTypes.data[i].fields.code);
+      let ulElement = document.createElement('ul');
+      disasterTypeList.appendChild(ulElement);
+      count += 21;
+      // console.log(ulElement)
 
-// //Below is the code to populate the parameter
+      for (let j = num; j < count; j++) { 
+        let ulElement = disasterTypeList.children[i]
+        let liElement = document.createElement('li');
+        let aElement = document.createElement('a');
+        aElement.textContent = disasterTypes.data[j].fields.name;
+        aElement.setAttribute('id', `${disasterTypes.data[j].fields.code}`)
+        liElement.appendChild(aElement);
+        ulElement.appendChild(liElement);
+      }
+      num += 21
+     }
+    }).catch(err => { 
+      // console.log(err);
+    })
+  }
 
-// if (searchReport !== "") { 
-//   document.getElementById("keypara").textContent = `Keywords(s): ${searchReport}`;
-// }
-// if (countryValue !== "") { 
-//   document.getElementById("countrypara").textContent = `Country: ${countryValue}`;
-// }
-// if (langValue !== "") { 
-//   document.getElementById("langpara").textContent = `Language: ${langText}`;
-// }
-// if (disasterValue !== "") { 
-//   document.getElementById("disasterpara").textContent = `Disaster Type: ${disasterText}`;
-// }
-// if (orgValue !== "") { 
-//   document.getElementById("orgpara").textContent = `Organization: ${orgText}`;
-// }
-
-
-// // const reportUrl = `https://api.reliefweb.int/v1/reports?appname=apidoc&query[value]=${searchReport}`
-// const reportUrl = `https://api.reliefweb.int/v1/reports?appname=apidoc&query[value]=${searchReport}&filter[operator]=AND&filter[conditions][0][operator]=AND&filter[conditions][0][conditions][0][field]=country.name&filter[conditions][0][conditions][0][value]=${countryValue}&filter[conditions][0][conditions][1][operator]=AND&filter[conditions][0][conditions][1][field]=language.id&filter[conditions][0][conditions][1][value]=${langValue}&filter[conditions][2][field]=source.type.id&filter[conditions][2][value]=${orgValue}&filter[conditions][3][field]=disaster.type.id&filter[conditions][3][value]=${disasterValue}`
-
-// console.log(reportUrl);
-
-// let response = async function () { 
-
-//   await axios.get(reportUrl).then(res => {
-//     console.log(res.data);
-
-//     const reportData = res.data.data;
-//     for (let i = 0; i < reportData.length; i++) { 
-
-//       let newLi = document.createElement('li');
-//       let newA = document.createElement('a');
-//       newA.setAttribute('href', './reportsinfo.html')
-//       newA.setAttribute("id", `${reportData[i].id}`);
-//       newA.textContent = `${reportData[i].fields.title}`
-    
-//       newLi.appendChild(newA);
-//       document.getElementById('title_section').appendChild(newLi);    
-//     }
-//     if (reportData.length === 0) { 
-//       newA1.remove();
-//     }
-
-//   }).catch(err => { 
-//     console.log(err)
-//   })
-// }
-
-// response();
+  disasterTypeResp();
 
 
-
-
-// //Click title, save id number to local storage
-// document.getElementById('title_section').addEventListener('click', (e) => { 
-//   let reportId = e.target.id;
-//   console.log(reportId.id)
-
-//   localStorage.setItem('report-id', reportId);
-// })
-
-
-
-// //Click next or previous and you will get fresh 10 new reports
-// let num = 0;
-
-// //total number of reports
-// let reportsNum = 0;
-
-// //For prev
-// let newA2 = document.createElement('a');
-// newA2.setAttribute("href", '#')
-// newA2.setAttribute("id", 'prevTitle')
-// newA2.textContent = "";
-// document.getElementById('info').appendChild(newA2);
-
-// document.getElementById('prevTitle').addEventListener('click', async (e) => {
-//   //to keep the id on when user reach the last page and the arrow disappears
-//   newA1.setAttribute("id", 'nextTitle');
-
-//   try {
-//     num -= 10;
-//     console.log(num);
-//     console.log(reportsNum);
-
-
-//     // pageInfo.textContent = `${num} of ${reportsNum + num}`//********
-
-//     const responseThree = await axios.get(`https://api.reliefweb.int/v1/reports?appname=apidoc&query[value]=${searchReport}&filter[operator]=AND&filter[conditions][0][operator]=AND&filter[conditions][0][conditions][0][field]=country.name&filter[conditions][0][conditions][0][value]=${countryValue}&filter[conditions][0][conditions][1][operator]=AND&filter[conditions][0][conditions][1][field]=language.id&filter[conditions][0][conditions][1][value]=${langValue}&filter[conditions][2][field]=source.type.id&filter[conditions][2][value]=${orgValue}&filter[conditions][3][field]=disaster.type.id&filter[conditions][3][value]=${disasterValue}&offset=${num}&limit=10`);
-//     console.log(responseThree.data);
-
-//     if (num >= 0) {
-//       document.getElementById('title_section').innerHTML = ""
-//       const reponseTitleTwo = responseThree.data.data
-//       for (let i = 0; i < reponseTitleTwo.length; i++) {
-//         document.getElementById('title_section').innerHTML += `<li><a href = './reportsinfo.html' id = ${reponseTitleTwo[i].id}>${reponseTitleTwo[i].fields.title}</a></li>`
-//       }
-//     }
-//     if (num === 0) { 
-//       newA2.textContent = "";
-//       newA2.removeAttribute("id", 'prevTitle2')
-//     }
+// get name of any disaster types are clicked 
+disasterTypeList.addEventListener('click', async (e) => {
+  try {
+    // console.log(e.target.id);
+    let selectedDisaster = e.target.id;
+    // console.log(selectedDisaster);
   
-//   } catch (e) { 
-//     console.log(e)
-//     num = 0;
-//   }
-// })
+    let disasterAPI_url = `https://api.reliefweb.int/v1/disasters?filter[field]=glide&filter[value]=${selectedDisaster}`
 
-
-// //For next
-// let newA1 = document.createElement('a');
-// newA1.setAttribute("href", '#')
-// newA1.setAttribute("id", 'nextTitle')
-// newA1.textContent = "";
-// document.getElementById('info').appendChild(newA1);
-
-// //****For page info
-// // let pageInfo = document.createElement('p');
-// // pageInfo.setAttribute("id", 'pageInfo');
-// // document.getElementById('info').appendChild(pageInfo);
-
-// document.getElementById('nextTitle').addEventListener('click', async (e) => {
-//   //add second id name to prev button
-//   newA2.setAttribute("id", 'prevTitle2');
     
-//   try {
-//     newA2.textContent = "";
-//     num += 10;
+    const responseTypeDisaster = await axios.get(disasterAPI_url);
     
-//     console.log(num);
-
-//     const responseThree = await axios.get(`https://api.reliefweb.int/v1/reports?appname=apidoc&query[value]=${searchReport}&filter[operator]=AND&filter[conditions][0][operator]=AND&filter[conditions][0][conditions][0][field]=country.name&filter[conditions][0][conditions][0][value]=${countryValue}&filter[conditions][0][conditions][1][operator]=AND&filter[conditions][0][conditions][1][field]=language.id&filter[conditions][0][conditions][1][value]=${langValue}&filter[conditions][2][field]=source.type.id&filter[conditions][2][value]=${orgValue}&filter[conditions][3][field]=disaster.type.id&filter[conditions][3][value]=${disasterValue}&offset=${num}&limit=10`);
-//     console.log(responseThree.data);
+    let href = responseTypeDisaster.data.data[0].href
+    // console.log(href);
+        //name of disaster type saved in local storage  
+        localStorage.setItem('href', href);
     
-    
-//     let totalCount = Math.ceil((responseThree.data.totalCount + 1) / 10) * 10;
-//     console.log(totalCount);
-
-//     if (num < totalCount) {
-//       document.getElementById('title_section').innerHTML = ""
-//       const reponseTitleTwo = responseThree.data.data  
-//       for (let i = 0; i < reponseTitleTwo.length; i++) {
-//         document.getElementById('title_section').innerHTML += `<li><a href = './reportsinfo.html' id = ${reponseTitleTwo[i].id}>${reponseTitleTwo[i].fields.title}</a></li>`
-//       } 
-//     }
-    
-//     //On last page, next arrow will dissapear
-//     if (num === totalCount-10) {
-//       newA1.removeAttribute("id", 'nextTitle');
-//       console.log("stop")
-//     }
+        if (selectedDisaster) {
+          location.replace('./disasters_info.html');
+        }
+     
+  } catch (e) {
+    // console.log(e);
   
-//   } catch (e) { 
-//     console.log(e)
-//   }
-// })
+  }
+});
+  
 
-// let i = 1;
-// let body = document.getElementsByTagName("body")[0];
 
-// for (i; i <= 21; i++) {
-//   let button = document.createElement("button");
-//   button.innerHTML = 'Button '+i;
-//   body.appendChild(button);
-//   button.addEventListener ("click", function() {
-//     alert(this.innerHTML);
-//   });
-// }
 
 //Below is the code to open the nav up when hamburger icon is clicked
 
@@ -199,15 +81,15 @@ document.querySelector('.hamburger').addEventListener('click', () => {
 
 /* The code below states that whenever the user clicks any part of the window, the dropdown will close.The if statement states that if user click any where but the button, then it matches () will return false and with ! this will turn false into true. */
 
-window.onclick = function(e) {
+window.onclick = function (e) {
 
   if (!e.target.matches('.hambtn')) {
     
-	var hamcontent = document.getElementsByClassName("ham-dropdowncontent");
-    	for (let i = 0; i < hamcontent.length; i++) {
-      		let openHamContent = hamcontent[i];
-      		if (openHamContent.classList.contains('show')) {
-        	openHamContent.classList.remove('show');
+    var hamcontent = document.getElementsByClassName("ham-dropdowncontent");
+    for (let i = 0; i < hamcontent.length; i++) {
+      let openHamContent = hamcontent[i];
+      if (openHamContent.classList.contains('show')) {
+        openHamContent.classList.remove('show');
       }
     }
   }

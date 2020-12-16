@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../responsive_style.css">
   <script src="https://kit.fontawesome.com/606dd3ae68.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- Axio is js library which uses ajax concept -->
-  <script src="./disasters_pg.js" type="module" defer></script>
+  <script src="./disasters_pg.js" text="module" defer></script>
   <title>Disasters Page</title>
 </head>
 <body>
@@ -37,8 +37,37 @@
 
   <h2 class = "header2_for_other">Latest Information of Worldwide Disasters</h2>
   
+  <div id = "disasterType_List"></div>
+    <!-- <ul>
+         <input type="button" id="Cold_Wave" value="CW">Cold Wave>
+         <li><input type="HIDDEN" name = "Cold Wave" a href="./disasters_info.html">Cold Wave</button></a></li> 
+        <li><input type = "hidden" a href="./disasters_info.html"><button id = "disasterTypeID" value= "CW">Cold Wave</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="DR">Drought</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="EQ">Earthquake</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="EP">Epidemic</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="EC">Extratropical Cyclone</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="FR">Fire</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="FF">Flash Flood</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="FL">Flood</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="HT">Heat Wave</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="IN">Insect Infestation</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="LS">Land Slide</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="MS">Mud Slide</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="ST">Severe Local Storm</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="AV">Snow Avalanche</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="SS">Storm Surge</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="AC">Technological Disaster</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="TC">Tropical Cyclone</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="TS">Tsunami</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="VO">Volcano</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="WF">Wild Fire</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "disasterTypeID" value="OT">Other</button></a></li>
+      </ul> -->
+
+  
   <!-- Three buttons in a group -->
-  <div id="disaster_types_row_1" class="btn-group" style="width:100%">
+  <!-- <div id="disaster_types_buttons" 
+    <div class="button-container" style="width:100%">
       <button style="width:12.5%">Cold Wave</button>
       <button style="width:12.5%">Drought</button>
       <button style="width:12.5%">Earthquake</button>
@@ -46,28 +75,57 @@
       <button style="width:12.5%">Extratropical</button>
       <button style="width:12.5%">Fire</button>
       <button style="width:12.5%">Flash Flood</button>
-  </div>
-  
-  <div id="disaster_types_row_2" class="btn-group" style="width:100%">
-    <button style="width:12.5%">Flood</button>
-    <button style="width:12.5%">Heat Wave</button>
-    <button style="width:12.5%">Insect Infestation</button>
-    <button style="width:12.5%">Land Slide</button>
-    <button style="width:12.5%">Mud Slide</button>
-    <button style="width:12.5%">Severe Local Storm</button>
-    <button style="width:12.5%">Snow Avalanche</button>
-</div>
+      <button style="width:12.5%">Flood</button>
+      <button style="width:12.5%">Heat Wave</button>
+      <button style="width:12.5%">Insect Infestation</button>
+      <button style="width:12.5%">Land Slide</button>
+      <button style="width:12.5%">Mud Slide</button>
+      <button style="width:12.5%">Severe Local Storm</button>
+      <button style="width:12.5%">Snow Avalanche</button>
+      <button style="width:12.5%">Storm Surge</button>
+      <button style="width:12.5%">Technological Disaster</button>
+      <button style="width:12.5%">Tropical Cyclone</button>
+      <button style="width:12.5%">Tsunami</button>
+      <button style="width:12.5%">Volcano</button>
+      <button style="width:12.5%">Wild Fire</button>
+      <button style="width:12.5%">Other</button> 
+</div> -->
+    
+<!-- <div class="button-container" id="disasterButtons" style="width:100%"></div> -->
+    <!-- <div id="disasterButtons">
+      <a href="./report/reports.html"><button id = "getReports">Search</button></a>
+        <li><a href="./disasters_info.html"> class = "CW">Cold Wave</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "DR">Drought</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "EQ">Earthquake</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "EP">Epidemic</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "EC">Extratropical Cyclone</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "FR">Fire</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "FF">Flash Flood</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "FL">Flood</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "HT">Heat Wave</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "IN">Insect Infestation</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "LS">Land Slide</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "MS">Mud Slide</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "ST">Severe Local Storm</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "AV">Snow Avalanche</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "SS">Storm Surge</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "AC">Technological Disaster</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "TC">Tropical Cyclone</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "TS">Tsunami</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "VO">Volcano</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "WF">Wild Fire</button></a></li>
+        <li><a href="./disasters_info.html"><button id = "OT">Other</button></a></li>
+  </div> -->
 
-<div id="disaster_types_row_3" class="btn-group" style="width:100%">
-  <button style="width:12.5%">Storm Surge</button>
-  <button style="width:12.5%">Technological Disaster</button>
-  <button style="width:12.5%">Tropical Cyclone</button>
-  <button style="width:12.5%">Tsunami</button>
-  <button style="width:12.5%">Volcano</button>
-  <button style="width:12.5%">Wild Fire</button>
-  <button style="width:12.5%">Other</button>
-</div>
-   
+
+  
+  
+  
+  
+  
+  
+  <!-- We are to comment out when we are done with report file -->
+<!-- </div> -->
   
   <!-- <div id = "info">
     <ul id = title_section></ul>
@@ -85,9 +143,9 @@
 
       
           
-      </div>
-    </div>
-  </div>
+    
+  
+
 
 
 
@@ -95,6 +153,6 @@
   <!-- <div id = "info">
     <ul id = title_section></ul>
   </div> -->
-  <script src="./disasters_pg.js" type="text/javascript" asyn defer></script>
+  <!-- <script src="./disasters_pg.js" type="text/javascript" asyn defer></script> -->
 </body>
 </html>

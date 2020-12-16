@@ -33,14 +33,14 @@ h1 {
 }
 
 .logo img {
-  position: relative;
-  margin-top: 15px;
+  position: flex;
+  margin-top: 10px;
   margin-left: 10px;
+  margin: 0 auto;
+  width: 110%;
+
 }
-h1::first-letter {
-  color: #f09f54;
-  font-size: 4vw;
-}
+
 
 nav {
   color: #254f86;
@@ -71,14 +71,14 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #27c3cd;
+  background-color: #4d9db9;
   color: white;
   padding: 4px 20px;
 }
 
 /* when on index.html only, keep Home highlighted */
 #mark {
-  background-color: #27c3cd;
+  background-color: #4d9db9;
   color: white;
   padding: 4px 20px;
 }
@@ -141,9 +141,9 @@ select {
   width: calc(100% - 30px);
   background: #fff;
   z-index: 0;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
+  border-bottom: 1px solid #70b289;
+  border-top: 1px solid #70b289;
+  border-left: 1px solid #70b289;
 }
 
 .selectionStyle {
@@ -164,9 +164,9 @@ select {
   width: calc(100% - 30px);
   background: #fff;
   z-index: 0;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
+  border-bottom: 1px solid #70b289;
+  border-top: 1px solid #70b289;
+  border-left: 1px solid #70b289;
 }
 
 .selectionStyle::after {
@@ -181,9 +181,9 @@ select {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
-  border-right: 1px solid black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-right: 1px solid #70b289;
+  border-top: 1px solid #70b289;
+  border-bottom: 1px solid b#70b289;
 }
 
 .selectionStyle .selection-box {
@@ -216,7 +216,7 @@ select {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   transition: 0.3s ease;
-  background-color: #28bfe6;
+  background-color: #70b289;
   cursor: pointer;
   border: none;
   text-align: center;
@@ -226,7 +226,7 @@ select {
 
 #getReports:hover {
   background-color: #cad0de;
-  color: #28bfe6;
+  color: #4d9db9;
 }
 
 /* All three images on index.html */
@@ -278,7 +278,7 @@ select {
   top: 30px;
   font-size: 1.8vw;
   margin-left: 2%;
-  border-left: #28bfe6 solid 10px;
+  border-left: #70b289 solid 10px;
   text-indent: 1%;
 }
 
@@ -335,7 +335,7 @@ select {
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 30px solid #28bfe6;
+  border-left: 30px solid #70b289;
 }
 
 #prevTitle2 {
@@ -344,7 +344,7 @@ select {
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-right: 30px solid #28bfe6;
+  border-right: 30px solid #70b289;
 }
 
 /* Following style is for reportinfo.html */

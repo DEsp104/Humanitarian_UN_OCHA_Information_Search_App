@@ -2,7 +2,7 @@
 
 ## A Humanitarian World Events Reporting API Based Application
 
-![](./Images/WeMundoBanner.png)
+![](./Images/WeMundo_color_banner_final_copy.png)
 
 ## Description
 

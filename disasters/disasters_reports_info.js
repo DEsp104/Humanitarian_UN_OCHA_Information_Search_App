@@ -9,15 +9,31 @@ let disasterAPI_url = localStorage.getItem('href');
 
 let disasterResponse = async function () { 
   await axios.get(disasterAPI_url).then(res => { 
-    console.log(res.data.data[0].fields["description-html"]);
-    let description = res.data.data[0].fields["description-html"];
+    console.log(res.data.data[0].fields["name"]);
+    let disasterEventName = res.data.data[0].fields["name"];
 
-    if (description === undefined) {
+    // console.log(res.data.data[0].fields["country"]);
+    // let disasterEventCountry = res.data.data[0].fields["country"];
+
+    console.log(res.data.data[0].fields["description-html"]);
+    let disasterDescription = res.data.data[0].fields["description-html"];
+
+    if (disasterDescription === undefined) {
       document.getElementById("disaster_description").innerHTML = `
       <h3>Nothing Found</h3>
-      <p>Apologies, but no description was found for the requestd country. Please search for another country.</p>`;
+      <p>Apologies, but no description was found for the requestd disaster. Please search for another disaster type.</p>`;
+    } else if (disasterEventName === undefined) {
+      document.getElementById("disaster_event_name").innerHTML = `
+      <h3>Nothing Found</h3>
+      <p>Apologies, but no description was found for the requestd disaster. Please search for another disaster type.</p>`;
+    // } else if (disasterEventCountry === undefined) {
+    //   document.getElementById("disaster_country").innerHTML = `
+    //   <h3>Nothing Found</h3>
+    //   <p>Apologies, but no description was found for the requestd disaster. Please search for another disaster type.</p>`;
     } else {
-      document.getElementById("disaster_description").innerHTML = `${description}`;
+      document.getElementById("disaster_event_name").innerHTML = `${disasterEventName}`;
+      // document.getElementById("disaster_country").innerHTML = `${disasterEventCountry}`;
+      document.getElementById("disaster_description").innerHTML = `${disasterDescription}`;
     }
 
   }).catch(e => { 

@@ -2,8 +2,10 @@ html {
   box-sizing: border-box; /* This will allow us to keep the border and padding contain in the content of the element. With out box-sizing the elements with different width will come out of the parent element stretching the page and making uncontainable. */
 }
 
-*, *::before, *::after {
-	box-sizing: inherit; /* This will take any of the elements, including psedo-elements, and apply the border-box value to the box-sizing. Remember this is being inherited from the <html> element. *(means the universal CSS selector) */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* This will take any of the elements, including psedo-elements, and apply the border-box value to the box-sizing. Remember this is being inherited from the <html> element. *(means the universal CSS selector) */
 }
 
 /* * {
@@ -38,9 +40,7 @@ h1 {
   margin-left: 10px;
   margin: 0 auto;
   width: 70%;
-
 }
-
 
 nav {
   color: #254f86;
@@ -388,79 +388,16 @@ select {
   padding: 0.5% 1%;
 }
 
-/* Disasters button */
-.btn {
-  color: #0099CC; 
-  background: transparent;
-  border: 2px solid #0099CC;
-  border-radius: 6px; 
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center; 
-  display: inline-block;      
-  font-size: 16px;      
-  margin: 4px 2px;      
-  -webkit-transition-duration: 0.4s; 
-  /* Safari */      
-  transition-duration: 0.4s;      
-  cursor: pointer;      
-  text-decoration: none;      
-  text-transform: uppercase;
- }
-
-  #btn1 {      
-    background-color: white;       
-    color: black;       
-    border: 2px solid #008CBA;
-  }
-
-  #btn1:hover {      
-    background-color: #008CBA;      
-    color: white; 
-  }
-
-  footer {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-  }
-
-  footer p {
-    margin: 0%;
-    color: #4d9db9; 
-  }
-
-  
-
-  /*#disasterButtons
+#disasterType_List {
   display: flex;
-  flex-direction: column-reverse;
-
-
-
-/*.btn-group button {
-  background-color: #254f86; /* Cyan background */
-  /*border: 1px solid #27c3cd; /* Green border */
-  /*color: white; /* White text */
-  /*padding: 24px 24px; /* Some padding */
-  /*cursor: pointer; /* Pointer/hand icon */
-  /*float: left; /* Float the buttons side by side */
-  /*display: flex;
-}
-
-/*.btn-group button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
-/*}
-
-/* Clear floats (clearfix hack) */
-/*.btn-group:after {
-  content: "";
-  clear: both;
-  display: flex;
-}
-
-/* Add a background color on hover */
-/*.btn-group button:hover {
-  background-color: #27c3cd;
+  border-radius: 6px;
+  position: relative;
+  top: 45px;
+  background-color: white;
+  padding: 1% 0;
+  border-radius: 6px;
+  margin: 0 1%;
+  justify-content: space-around;
+  margin-left: 15%;
+  margin-right: 15%;
 }

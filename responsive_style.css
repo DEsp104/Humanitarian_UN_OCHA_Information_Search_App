@@ -825,21 +825,21 @@
 #disasterType_List ul {
   list-style-type: none;
   font-size: 1.5vw;
-  padding: 2% 1%;
+  padding: 2% ;
   
 }
 
 #disasterType_List li {
   cursor: pointer;
-  margin: 8% 0;
-  border-bottom: 2px #e5e5e5 solid;
+  margin: 3% 0;
+  border-bottom: 1px #e5e5e5 solid;
 }
 
 #disaster_description{
   background-color: white;
   margin-top: 4%;
   margin-left: 8%;
-  margin-right: 8%;
+  margin-right: %;
   padding: 2px 0;
 }
 

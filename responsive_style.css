@@ -28,6 +28,7 @@
     border: red 2px solid;
     border-radius: 2px;
     cursor: pointer;
+    background-color: white;
   }
 
   /* for hamburger to pop up when clicked */
@@ -62,7 +63,7 @@
 
   #myDropdown a:hover {
     color: white;
-    background-color: r#254f86;
+    background-color: #27c3cd;
   }
 
   #myDropdown li:not(:last-child) {
@@ -107,19 +108,32 @@
   #left-content h2 {
     margin: 0px;
     font-size: 5vw;
+    text-align: center;
   }
 
   #left-content p {
-    font-size: 3.4vw;
+    font-size: 3.4vw; 
+    padding: 0 4%;
   }
 
   .inner-container {
-    width: 36%;
+    width: 38%;
   }
 
   .inner-container .selectionStyle {
     width: 100%;
   }
+
+  .outer-container > .inner-container {
+    margin-right: 4%;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+#searchButton {
+  display: flex;
+  margin-left: 8%; 
+}
 
   #reportText,
   .selectionStyle,
@@ -222,26 +236,36 @@
     left: 71%;
   }
 
-  /* for hamburger to pop up when clicked */
-  .ham-dropdowncontent {
-    font-size: 3vw;
-    position: absolute;
-    width: 360%;
-    top: 110%;
-    right: -20px;
-    list-style-type: none;
-    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.2);
-    margin: 0;
-    background-color: white;
-    margin: 0px;
-    padding: 0px;
-    z-index: 1;
-    display: none;
-  }
+
 
   .show {
     display: block;
   }
+
+  /* Countries Page */
+
+  #country_list {
+    margin-top: 17%;
+    background-color: white;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 1% 0;
+    border-radius: 6px;
+  }
+
+  #country_list ul {
+    list-style-type: none;
+    font-size: 4.2vw;
+    padding: 0 5%;
+    margin: 0;
+  }
+
+  #country_list li {
+    cursor: pointer;
+    padding: 3% 0;
+  }
+
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -251,7 +275,7 @@
   }
 
   header {
-    background-color: transparent;
+    background-color: #254f86;
   }
 
   header h1 {
@@ -315,7 +339,7 @@
 
   #myDropdown a:hover {
     color: white;
-    background-color: #254f86;
+    background-color: #27c3cd;
   }
 
   #myDropdown li:not(:last-child) {
@@ -395,6 +419,15 @@
     height: 26px;
   }
 
+  .outer-container > .inner-container {
+    margin-right: -2%;
+    margin-left: 14%;
+}
+
+#searchButton {
+  margin-left: 14%; 
+}
+
   #getReports {
     font-size: 1.66vw;
   }
@@ -473,6 +506,32 @@
 
   #back_link {
     left: 71%;
+  }
+
+  /* Country page */
+
+  #country_list {
+    display: flex;
+    border-radius: 6px;
+    position: relative;
+    top: 45px;
+    background-color: white;
+    padding: 1% 0;
+    border-radius: 6px;
+    margin: 0 1%;
+  }
+
+  #country_list ul {
+    list-style-type: none;
+    font-size: 2.2vw;
+    padding: 2% 1%;
+    
+  }
+
+  #country_list li {
+    cursor: pointer;
+    margin: 8% 0;
+    border-bottom: 2px #e5e5e5 solid;
   }
 }
 
@@ -578,6 +637,8 @@
   }
 }
 
+
+
 /* Large devices (laptops/desktops, 882px and up) */
 @media only screen and (min-width: 882px) {
   body {
@@ -586,7 +647,7 @@
   }
 
   header {
-    background-color: white;
+    background-color: #254f86;
   }
 
   nav ul {
@@ -669,6 +730,20 @@
 
   #back_link {
     left: 71%;
+  }
+
+  #country_list ul {
+    list-style-type: none;
+    font-size: 1.5vw;
+    padding: 2% 1%;
+    width: 16.7%;
+    
+  }
+
+  #country_list li {
+    cursor: pointer;
+    margin: 8% 0;
+    border-bottom: 2px #e5e5e5 solid;
   }
 }
 

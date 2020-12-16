@@ -1,5 +1,5 @@
 html {
-	box-sizing: border-box; /* This will allow us to keep the border and padding contain in the content of the element. With out box-sizing the elements with different width will come out of the parent element stretching the page and making uncontainable. */
+  box-sizing: border-box; /* This will allow us to keep the border and padding contain in the content of the element. With out box-sizing the elements with different width will come out of the parent element stretching the page and making uncontainable. */
 }
 
 *, *::before, *::after {
@@ -12,12 +12,12 @@ html {
 
 body {
   margin: 0;
-  background-color: #DBE7F4;
+  background-color: #dbe7f4;
 }
 
-header{
+header {
   display: flex;
-  background-color: white;
+  background-color: #254f86;
 }
 
 h1 {
@@ -29,17 +29,25 @@ h1 {
   padding: 40px 10px;
   width: 32%;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
+.logo img {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 10px;
+}
 h1::first-letter {
   color: #f09f54;
   font-size: 4vw;
 }
 
 nav {
+  color: #254f86;
   margin: 0 auto;
   width: 68%;
-  
+  background-color: #254f86;
+  font-family: "Poppins", sans-serif;
 }
 
 nav ul {
@@ -53,11 +61,10 @@ nav ul {
 
 nav li {
   margin-right: 5%;
-  
 }
 
 nav a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bolder;
   padding: 4px 20px;
@@ -65,14 +72,14 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #C0130E;
+  background-color: #27c3cd;
   color: white;
   padding: 4px 20px;
 }
 
 /* when on index.html only, keep Home highlighted */
 #mark {
-  background-color: #C0130E;
+  background-color: #27c3cd;
   color: white;
   padding: 4px 20px;
 }
@@ -90,7 +97,6 @@ nav a:hover {
   /* font-size: 1.8em; */
   font-size: 2vw;
   margin-top: 110px;
-  
 }
 
 #left-content p {
@@ -101,11 +107,10 @@ nav a:hover {
   display: flex;
 }
 
-.inner-container{
+.inner-container {
   display: flex;
   flex-direction: column;
   width: calc(30% - 30px);
-
 }
 
 .outer-container > .inner-container {
@@ -113,17 +118,15 @@ nav a:hover {
   margin-top: 2%;
 }
 
-input[type='text'] {
-  outline:none;
+input[type="text"] {
+  outline: none;
 }
-
 
 #reportText {
   border: 1px solid black;
   font-size: 0.92vw;
   color: black;
   height: 32px;
-  
 }
 
 select {
@@ -131,17 +134,17 @@ select {
 }
 
 #selection {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 32px;
-    width: calc(100% - 30px);
-    background: #fff;
-    z-index: 0;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: calc(100% - 30px);
+  background: #fff;
+  z-index: 0;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
 }
 
 .selectionStyle {
@@ -153,23 +156,22 @@ select {
   float: right;
 }
 
-
 .selectionStyle::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 32px;
-    width: calc(100% - 30px);
-    background: #fff;
-    z-index: 0;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: calc(100% - 30px);
+  background: #fff;
+  z-index: 0;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
 }
 
 .selectionStyle::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -202,7 +204,6 @@ select {
   padding: 5px 15px;
 }
 
-
 /* Search button */
 
 #searchButton {
@@ -213,10 +214,10 @@ select {
 #getReports {
   padding: 10% 22%;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  transition: .3s ease;
-  background-color: #28BFE6;
+  transition: 0.3s ease;
+  background-color: #28bfe6;
   cursor: pointer;
   border: none;
   text-align: center;
@@ -225,8 +226,8 @@ select {
 }
 
 #getReports:hover {
-  background-color: #CAD0DE;
-  color: #28BFE6;
+  background-color: #cad0de;
+  color: #28bfe6;
 }
 
 /* All three images on index.html */
@@ -261,18 +262,16 @@ select {
   left: 50%;
   position: relative;
   transform: translate(-50%);
-
 }
 
-#flex{
+#flex {
   display: flex;
   margin-top: 66px;
 }
 
 #right-content {
-  width: 40%; 
+  width: 40%;
 }
-
 
 /* Section below is to style reports.html */
 .header2_for_other {
@@ -280,7 +279,7 @@ select {
   top: 30px;
   font-size: 1.8vw;
   margin-left: 2%;
-  border-left: #28BFE6 solid 10px;
+  border-left: #28bfe6 solid 10px;
   text-indent: 1%;
 }
 
@@ -293,15 +292,14 @@ select {
   margin-bottom: 8%;
 }
 
-
 #title_section {
   list-style-type: none;
   padding: 0 1%;
-  font-size: 1.2vw
+  font-size: 1.2vw;
 }
 
 #title_section li:not(:last-child) {
-  border-bottom: 2px #E5E5E5 solid;
+  border-bottom: 2px #e5e5e5 solid;
 }
 
 #title_section li {
@@ -318,17 +316,17 @@ select {
 }
 
 #title_section a:hover {
-  color: red;
+  color: #254f86;
 }
 
-#prevTitle2, #nextTitle {
+#prevTitle2,
+#nextTitle {
   display: inline-block;
   position: relative;
   top: 80px;
   left: 42%;
-  transform: translate(-50%, -50%); 
-
-} 
+  transform: translate(-50%, -50%);
+}
 
 #nextTitle {
   margin-left: 2.5%;
@@ -338,21 +336,21 @@ select {
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 30px solid #28BFE6;
+  border-left: 30px solid #28bfe6;
 }
 
 #prevTitle2 {
   left: -8%;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent; 
-  border-right:30px solid #28BFE6; 
+  border-bottom: 20px solid transparent;
+  border-right: 30px solid #28bfe6;
 }
 
 /* Following style is for reportinfo.html */
 
-#report_information{
+#report_information {
   margin-top: 4%;
   margin-left: 8%;
   margin-right: 8%;
@@ -384,9 +382,35 @@ select {
   top: 30px;
   left: 81%;
   transform: translate(-50%, -50%);
-  background-color: #CAD0DE;
+  background-color: #cad0de;
   text-decoration: none;
   font-weight: bolder;
   color: black;
   padding: 0.5% 1%;
+}
+
+.btn-group button {
+  background-color: #254f86; /* Cyan background */
+  border: 1px solid #27c3cd; /* Green border */
+  color: white; /* White text */
+  padding: 24px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  display: flex;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: flex;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #27c3cd;
 }

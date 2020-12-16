@@ -1,10 +1,10 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   header h1 {
-    padding: 21px 12px;   
+    padding: 21px 12px;
     font-size: 5vw;
   }
-  
+
   h1::first-letter {
     color: #f09f54;
     font-size: 6vw;
@@ -38,7 +38,7 @@
     top: 110%;
     right: -20px;
     list-style-type: none;
-    box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.2);
     margin: 0;
     background-color: white;
     margin: 0px;
@@ -61,18 +61,16 @@
   }
 
   #myDropdown a:hover {
-   color: white;
-   background-color: red;
+    color: white;
+    background-color: r#254f86;
   }
 
-
-
   #myDropdown li:not(:last-child) {
-    border-bottom: 2px #E5E5E5 solid;
+    border-bottom: 2px #254f86 solid;
   }
 
   #mark1 {
-    background-color: red;
+    background-color: #27c3cd;
   }
 
   #mark1 a {
@@ -88,10 +86,11 @@
     margin: 18px 5px;
   }
 
-  #imgsize2, #imgsize3 {
+  #imgsize2,
+  #imgsize3 {
     display: none;
   }
-  
+
   #imgsize1 {
     width: 160px;
     height: 160px;
@@ -121,8 +120,12 @@
   .inner-container .selectionStyle {
     width: 100%;
   }
-  
-  #reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
+
+  #reportText,
+  .selectionStyle,
+  .selectionStyle::before,
+  .selectionStyle::after,
+  .selection-box {
     height: 26px;
     font-size: 2.2vw;
   }
@@ -132,7 +135,7 @@
   }
 
   #organization:after {
-    content: 'Organization';
+    content: "Organization";
   }
 
   .selectionStyle .selection-box {
@@ -145,7 +148,7 @@
   }
 
   /* styling for report page */
-  #searchParaText{
+  #searchParaText {
     background-color: white;
     margin-left: 8%;
     margin-right: 8%;
@@ -154,17 +157,17 @@
     border: 1px black solid;
   }
 
-  #header2Para{
+  #header2Para {
     position: relative;
     top: 30px;
     font-size: 4.8vw;
     margin-left: 2%;
-    border-left: #28BFE6 solid 10px;
+    border-left: #28bfe6 solid 10px;
     text-indent: 1%;
   }
 
   #searchParaText p {
-    font-size: 4.2vw
+    font-size: 4.2vw;
   }
 
   #keypara {
@@ -172,7 +175,7 @@
   }
 
   .header2_for_other {
-    font-size: 4.8vw
+    font-size: 4.8vw;
   }
 
   #title_section {
@@ -180,7 +183,8 @@
     padding-bottom: 2%;
   }
 
-  #prevTitle2, #nextTitle {
+  #prevTitle2,
+  #nextTitle {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -188,11 +192,11 @@
 
   #prevTitle2 {
     left: -8%;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent; 
-    border-right:30px solid #28BFE6; 
+    border-bottom: 20px solid transparent;
+    border-right: 30px solid #28bfe6;
   }
 
   #nextTitle {
@@ -201,56 +205,49 @@
     height: 0;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-left: 30px solid #28BFE6;
+    border-left: 30px solid #28bfe6;
   }
 
-  #info{
+  #info {
     margin: 0 13%;
   }
 
-    /* styling reportsinfo */
+  /* styling reportsinfo */
 
-    #report_information {
-      margin-top: 14%;
-    }
-  
-    #back_link {
-      left: 71%;
-    }
-  
-    /* for hamburger to pop up when clicked */
-    .ham-dropdowncontent {
-      font-size: 3vw;
-      position: absolute;
-      width: 360%;
-      top: 110%;
-      right: -20px;
-      list-style-type: none;
-      box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.2);
-      margin: 0;
-      background-color: white;
-      margin: 0px;
-      padding: 0px;
-      z-index: 1;
-      display: none;
-    }
-  
-    .show {
-      display: block;
-    }
+  #report_information {
+    margin-top: 14%;
   }
 
+  #back_link {
+    left: 71%;
+  }
 
+  /* for hamburger to pop up when clicked */
+  .ham-dropdowncontent {
+    font-size: 3vw;
+    position: absolute;
+    width: 360%;
+    top: 110%;
+    right: -20px;
+    list-style-type: none;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    display: none;
+  }
 
-
-
-
-
+  .show {
+    display: block;
+  }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  body  {
-    background: linear-gradient(180deg, #DBE7F4, #FFFFFF 50%) no-repeat;
+  body {
+    background: linear-gradient(180deg, #dbe7f4, #ffffff 50%) no-repeat;
   }
 
   header {
@@ -258,7 +255,7 @@
   }
 
   header h1 {
-    padding: 20px 10px;   
+    padding: 20px 10px;
     font-size: 4vw;
   }
 
@@ -294,7 +291,7 @@
     top: 110%;
     right: -20px;
     list-style-type: none;
-    box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.2);
     margin: 0;
     background-color: white;
     margin: 0px;
@@ -317,18 +314,16 @@
   }
 
   #myDropdown a:hover {
-   color: white;
-   background-color: red;
+    color: white;
+    background-color: #254f86;
   }
 
-
-
   #myDropdown li:not(:last-child) {
-    border-bottom: 2px #E5E5E5 solid;
+    border-bottom: 2px #254f86 solid;
   }
 
   #mark1 {
-    background-color: red;
+    background-color: #27c3cd;
   }
 
   #mark1 a {
@@ -344,10 +339,11 @@
     margin: 18px 5px;
   }
 
-  #imgsize2, #imgsize3 {
+  #imgsize2,
+  #imgsize3 {
     display: none;
   }
-  
+
   #imgsize1 {
     width: 160px;
     height: 160px;
@@ -376,8 +372,12 @@
   .inner-container .selectionStyle {
     width: 100%;
   }
-  
-  #reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
+
+  #reportText,
+  .selectionStyle,
+  .selectionStyle::before,
+  .selectionStyle::after,
+  .selection-box {
     height: 26px;
     font-size: 1.66vw;
   }
@@ -387,7 +387,7 @@
   }
 
   #organization:after {
-    content: 'Organization';
+    content: "Organization";
   }
 
   .selectionStyle .selection-box {
@@ -399,149 +399,150 @@
     font-size: 1.66vw;
   }
 
+  /* styling for report page */
 
-    /* styling for report page */
+  #searchParameter {
+    margin-top: 3%;
+  }
 
-    #searchParameter {
-      margin-top: 3%;
-    }
-    
-    #searchParaText{
-      display: flex;
-      background-color: white;
-      padding: 0 2%;
-      border: 1px black solid;
-      margin: 0 8%;
-    }
+  #searchParaText {
+    display: flex;
+    background-color: white;
+    padding: 0 2%;
+    border: 1px black solid;
+    margin: 0 8%;
+  }
 
-    .flexitems{
-      width: 33.33%;
-    }
-  
-    #header2Para{
-      /* position: relative;
+  .flexitems {
+    width: 33.33%;
+  }
+
+  #header2Para {
+    /* position: relative;
       top: 30px; */
-      font-size: 2.8vw;
-      border-left: #28BFE6 solid 10px;
-      text-indent: 1%;
-      margin-left: 2%;
-    }
-  
-    #searchParaText p {
-      font-size: 2.2vw;
-      margin: 0;
-      padding: 1% 0;
-    }
-  
-    #keypara {
-      margin-top: 5%;
-    }
+    font-size: 2.8vw;
+    border-left: #254f86 solid 10px;
+    text-indent: 1%;
+    margin-left: 2%;
+  }
 
-    .header2_for_other {
-      font-size: 2.8vw;
-    }
-  
-    #title_section {
-      font-size: 2.2vw;
-    }
-  
-    #prevTitle2, #nextTitle {
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      left: 42%;
-      transform: translate(-50%, -50%);
-    }
-  
-    #prevTitle2 {
-      left: -5%;
-    }
-  
-    #nextTitle {
-      left: 103%;
-    }
-  
-    #info{
-      margin: 0 8%;
-    }
-  
-      /* styling reportsinfo */
-  
-      #report_information {
-        margin-top: 4%;
-      }
-    
-      #back_link {
-        left: 71%;
-      }
+  #searchParaText p {
+    font-size: 2.2vw;
+    margin: 0;
+    padding: 1% 0;
+  }
 
+  #keypara {
+    margin-top: 5%;
+  }
+
+  .header2_for_other {
+    font-size: 2.8vw;
+  }
+
+  #title_section {
+    font-size: 2.2vw;
+  }
+
+  #prevTitle2,
+  #nextTitle {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+  }
+
+  #prevTitle2 {
+    left: -5%;
+  }
+
+  #nextTitle {
+    left: 103%;
+  }
+
+  #info {
+    margin: 0 8%;
+  }
+
+  /* styling reportsinfo */
+
+  #report_information {
+    margin-top: 4%;
+  }
+
+  #back_link {
+    left: 71%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) { 
+@media only screen and (min-width: 768px) {
   header h1 {
     padding: 18px 8px;
     font-size: 3.4vw;
   }
 
   .selectionStyle .selection-box {
-      font-size: 1.4vw;
+    font-size: 1.4vw;
   }
 
   #getReports {
     font-size: 1.4vw;
-}
+  }
 
-.hamburger {
-  font-size: 3.4vw;
-}
+  .hamburger {
+    font-size: 3.4vw;
+  }
 
-.ham-dropdowncontent {
-  font-size: 2.4vw;
-}
+  .ham-dropdowncontent {
+    font-size: 2.4vw;
+  }
 
-#flex {
-  margin: 0px 2%;
-}
+  #flex {
+    margin: 0px 2%;
+  }
 
-#left-content h2 {
-  margin: 0px;
-  font-size: 3.6vw;
-}
+  #left-content h2 {
+    margin: 0px;
+    font-size: 3.6vw;
+  }
 
-#left-content p {
-  font-size: 2.4vw;
-}
+  #left-content p {
+    font-size: 2.4vw;
+  }
 
-#right-content {
-  width: 62%;
-  margin: 0 auto;
-}
+  #right-content {
+    width: 62%;
+    margin: 0 auto;
+  }
 
-#imgsize2, #imgsize3 {
-  display: block;
-}
+  #imgsize2,
+  #imgsize3 {
+    display: block;
+  }
 
-#imgsize1, #imgsize2, #imgsize3  {
-  width: 160px;
-  height: 160px;
-  margin: 0;
-}
+  #imgsize1,
+  #imgsize2,
+  #imgsize3 {
+    width: 160px;
+    height: 160px;
+    margin: 0;
+  }
 
+  #reportText,
+  .selectionStyle,
+  .selectionStyle::before,
+  .selectionStyle::after,
+  .selection-box {
+    font-size: 1.6vw;
+    height: 29px;
+  }
 
-#reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
-  font-size: 1.6vw;
-  height: 29px;
-}
-
-.selectionStyle .selection-box {
-  font-size: 1.6vw;
-  height: 29px;
-}
-
-#getReports {
-  font-size: 1.3vw;
-}
+  .selectionStyle .selection-box {
+    font-size: 1.6vw;
+    height: 29px;
+  }
 
 #title_section{
   padding-bottom: 2%;
@@ -563,14 +564,25 @@
 #nextTitle {
   left: 52%;
 }
+  #getReports {
+    font-size: 1.3vw;
+  }
 
+  /* Styling for report page */
+  #prevTitle2,
+  #nextTitle {
+    position: relative;
+    top: 108px;
+    left: 48%;
+    font-size: 1vw;
+  }
 }
 
 /* Large devices (laptops/desktops, 882px and up) */
 @media only screen and (min-width: 882px) {
   body {
     background: 0;
-    background-color: #DBE7F4;
+    background-color: #dbe7f4;
   }
 
   header {
@@ -582,145 +594,146 @@
   }
 
   .hamburger {
-		display: none;
+    display: none;
   }
 
   #flex {
     flex-direction: row;
     margin-top: 66px;
   }
-  
+
   #left-content h2 {
     margin: 0px;
     font-size: 2.7vw;
     margin-top: 15%;
   }
-  
+
   #left-content p {
     font-size: 2vw;
   }
-  
-  #imgsize1, #imgsize2, #imgsize3  {
+
+  #imgsize1,
+  #imgsize2,
+  #imgsize3 {
     width: 200px;
     height: 200px;
-    
   }
-  
-  #reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
+
+  #reportText,
+  .selectionStyle,
+  .selectionStyle::before,
+  .selectionStyle::after,
+  .selection-box {
     font-size: 1.3vw;
     height: 30px;
   }
-  
+
   .selectionStyle .selection-box {
     font-size: 1.3vw;
     height: 30px;
   }
-  
+
   #getReports {
     font-size: 1.13vw;
   }
 
-      /* styling for report page */
+  /* styling for report page */
 
-    
-      #header2Para{
-        font-size: 2vw;
-      }
-    
-      #searchParaText p {
-        font-size: 1.5vw;
-      }
+  #header2Para {
+    font-size: 2vw;
+  }
 
-      .header2_for_other {
-        font-size: 2vw
-      }
-    
-      #title_section {
-        font-size:  1.5vw;
-    }
-    
+  #searchParaText p {
+    font-size: 1.5vw;
+  }
 
-    
-      #info{
-        margin: 0 8%;
-        margin-bottom: 8%;
-      }
-    
-        /* styling reportsinfo */
-    
-        #report_information {
-          margin-top: 4%;
-          margin-bottom: 2%;
-        }
-      
-        #back_link {
-          left: 71%;
-        }
+  .header2_for_other {
+    font-size: 2vw;
+  }
 
+  #title_section {
+    font-size: 1.5vw;
+  }
+
+  #info {
+    margin: 0 8%;
+    margin-bottom: 8%;
+  }
+
+  /* styling reportsinfo */
+
+  #report_information {
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+
+  #back_link {
+    left: 71%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {  
+@media only screen and (min-width: 1200px) {
   #left-content h2 {
     margin: 0px;
     font-size: 2.4vw;
     margin-top: 15%;
   }
-  
+
   #left-content p {
     font-size: 1.58vw;
   }
-  
-  
-  #reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
+
+  #reportText,
+  .selectionStyle,
+  .selectionStyle::before,
+  .selectionStyle::after,
+  .selection-box {
     height: 32px;
   }
-  
+
   .selectionStyle .selection-box {
     height: 32px;
   }
-  
+
   #getReports {
     font-size: 0.86vw;
   }
 
+  /* styling for report page */
 
-      /* styling for report page */
-    
-      #header2Para{
-        font-size: 1.8vw;
-      }
-    
-      #searchParaText p {
-        font-size: 1.3vw;
-      }
+  #header2Para {
+    font-size: 1.8vw;
+  }
 
-      .header2_for_other {
-        font-size: 1.8vw
-      }
-    
-      #title_section {
-        font-size:  1.3vw;
-    }
-    
-    
-      #info{
-        margin: 0 8%;
-        margin-bottom: 8%;
-      }
-    
-        /* styling reportsinfo */
-    
-        #report_information {
-          margin-top: 2%;
-          margin-bottom: 2%;
-        }
-      
-        #back_link {
-          left: 71%;
-        }
+  #searchParaText p {
+    font-size: 1.3vw;
+  }
+
+  .header2_for_other {
+    font-size: 1.8vw;
+  }
+
+  #title_section {
+    font-size: 1.3vw;
+  }
+
+  #info {
+    margin: 0 8%;
+    margin-bottom: 8%;
+  }
+
+  /* styling reportsinfo */
+
+  #report_information {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #back_link {
+    left: 71%;
+  }
 }
-
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1400px) {
@@ -729,20 +742,23 @@
     font-size: 2vw;
     margin-top: 15%;
   }
-  
+
   #left-content p {
     font-size: 1.2vw;
   }
-  
-  
-  #reportText, .selectionStyle, .selectionStyle::before, .selectionStyle::after, .selection-box {
+
+  #reportText,
+  .selectionStyle,
+  .selectionStyle::before,
+  .selectionStyle::after,
+  .selection-box {
     font-size: 1vw;
   }
-  
+
   .selectionStyle .selection-box {
     font-size: 1vw;
   }
-  
+
   #getReports {
     font-size: 0.79vw;
   }

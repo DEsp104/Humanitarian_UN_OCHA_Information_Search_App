@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../responsive_style.css">
+  <script src="https://kit.fontawesome.com/606dd3ae68.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- Axio is js library which uses ajax concept -->
+  <script src="./disasters_pg.js" type="module" defer></script>
+  <title>Disasters Page</title>
+</head>
+<body>
+  <header>
+    <h1>WeMundo</h1>
+    <nav>
+      <ul id = "navUl">
+        <li><a href="../index.html" title="Home">Home</a></li>
+        <li><a href="../about/about_pg.html" title = "About">About</a></li>
+        <li><a href="../disasters/disasters_pg.html" title="Disasters" id="mark">Disasters</a></li>
+        <li><a href="../countries/country.html" title="Countries">Countries</a></li>
+        <li><a href="../faqs/faqs_pg.html" title="FAQs">FAQs</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <i id = ham-icon class="hambtn fas fa-bars"></i>
+      <ul id = "myDropdown" class="ham-dropdowncontent">
+        <li><a href="../index.html" title="Home" id="">Home</a></li>
+        <li><a href="../about/about_pg.html" title="About">About</a></li>
+        <li><a href="../disasters/disasters_pg.html" title="Disasters">Disasters</a></li>
+        <li><a href="../countries/country.html" title="Countries">Countries</a></li>
+        <li><a href="../faqs/faqs_pg.html" title="FAQs">FAQs</a></li>
+      </ul>
+    </div><!-- We need to put a hamburger  -->
+    
+  </header>
+
+  <h2 class = "header2_for_other">Latest Information of Worldwide Disasters</h2>
+  
+  <!-- Three buttons in a group -->
+  <div id="disaster_types_row_1" class="btn-group" style="width:100%">
+      <button style="width:12.5%">Cold Wave</button>
+      <button style="width:12.5%">Drought</button>
+      <button style="width:12.5%">Earthquake</button>
+      <button style="width:12.5%">Epidemic</button>
+      <button style="width:12.5%">Extratropical</button>
+      <button style="width:12.5%">Fire</button>
+      <button style="width:12.5%">Flash Flood</button>
+  </div>
+  
+  <div id="disaster_types_row_2" class="btn-group" style="width:100%">
+    <button style="width:12.5%">Flood</button>
+    <button style="width:12.5%">Heat Wave</button>
+    <button style="width:12.5%">Insect Infestation</button>
+    <button style="width:12.5%">Land Slide</button>
+    <button style="width:12.5%">Mud Slide</button>
+    <button style="width:12.5%">Severe Local Storm</button>
+    <button style="width:12.5%">Snow Avalanche</button>
+</div>
+
+<div id="disaster_types_row_3" class="btn-group" style="width:100%">
+  <button style="width:12.5%">Storm Surge</button>
+  <button style="width:12.5%">Technological Disaster</button>
+  <button style="width:12.5%">Tropical Cyclone</button>
+  <button style="width:12.5%">Tsunami</button>
+  <button style="width:12.5%">Volcano</button>
+  <button style="width:12.5%">Wild Fire</button>
+  <button style="width:12.5%">Other</button>
+</div>
+   
+  
+  <!-- <div id = "info">
+    <ul id = title_section></ul>
+  </div> -->
+  
+  <!-- <div id="home">
+    <div class="landing-text">
+      <h2 id="Auth-Text-Color">Types of Worldwide Disasters</h2>
+      <div class="col-lg-12 ">
+          <div class="input-group md-form form-sm form-1 pl-0 " id="searchbarcontainer">
+            <input class="form-control my-0 py-1 searchbar" type="text" placeholder="Search" aria-label="Search" id="SearchbyAuth">
+            <a href="#" class="btn btn-default btn-lg" id="searchbyAuthBtn">Search</a>
+          </div>          
+      </div> -->
+
+      
+          
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <!-- <div id = "info">
+    <ul id = title_section></ul>
+  </div> -->
+  <script src="./disasters_pg.js" type="text/javascript" asyn defer></script>
+</body>
+</html>
